@@ -1,8 +1,6 @@
 <template>
   <HeaderBar />
   <div class="golf-score">
-    <!-- <h1>Sloppy Golf</h1> -->
-    <!-- <img class="golfLogo" alt="Golf logo" src="./assets/golf.png"> -->
     <br />
   <PostComponent />
   </div>
