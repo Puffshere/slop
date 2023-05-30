@@ -1,18 +1,22 @@
 <template>
+  <HeaderBar />
   <div class="golf-score">
-    <h1>Sloppy Golf</h1>
-    <img class="golfLogo" alt="Golf logo" src="./assets/golf.png">
+    <!-- <h1>Sloppy Golf</h1> -->
+    <!-- <img class="golfLogo" alt="Golf logo" src="./assets/golf.png"> -->
+    <br />
   <PostComponent />
   </div>
 </template>
 
 <script>
 import PostComponent from './components/PostComponent.vue';
+import HeaderBar from './components/HeaderBar.vue';
 
 export default {
   name: 'App',
   components: {
-    PostComponent
+    PostComponent,
+    HeaderBar
 }
 }
 </script>
@@ -24,11 +28,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 body{
-  background-color: rgb(226, 225, 225);
+  background: linear-gradient(268deg, #c3c4c4, #f3f3f3);
 }
 
 .golfLogo {

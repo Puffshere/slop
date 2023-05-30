@@ -5,18 +5,14 @@
   </div>
 
   <div class="create-post">
-    <label for="create-post">Today's Winner!</label>
-    <hr />
+    <label class="todaysWinner" for="create-post">Today's Winner!</label>
+    <br />
     <input type="text" id="create-post" v-model="text" placeholder="" />
-    <button @click="showDiv">Update</button>
+    <button class="updateStyling" @click="showDiv">Update</button>
     <div v-show="showDivs">
-      <input
-        type="password"
-        id="password"
-        v-model="password"
-        placeholder="Enter Password"
-      />
-      <button v-on:click="createPost">Post</button>
+      <br />
+      <input type="password" id="password" v-model="password" placeholder="Enter Password"/>
+      <button class="postStyling" v-on:click="createPost">Post</button>
     </div>
   </div>
   <br />
@@ -29,12 +25,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr
-          v-for="(post, index) in posts"
-          v-bind:item="post"
-          v-bind:index="index"
-          v-bind:key="post._id"
-        >
+        <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
           <td>
             {{
               `${
@@ -107,6 +98,17 @@ export default {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.todaysWinner {
+  color: rgb(131, 112, 4);
+}
+
+.updateStyling {
+  padding-left: 5px;
+}
+.postStyling {
+  padding-left: 5px;
 }
 
 table {
