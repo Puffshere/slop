@@ -6,6 +6,7 @@
     <Records />
   </div>
   <br>
+  <br>
   <Footer />
 </template>
   
