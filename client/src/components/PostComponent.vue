@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="error" v-if="error">{{ error }}</div>
-    <h3 class="Winners">2023 WINNERS!</h3>
+    <h3 class="Winners">2024 WINNERS!</h3>
   </div>
   <div class="create-post">
     <label for="create-post">Today's Winner!</label>
