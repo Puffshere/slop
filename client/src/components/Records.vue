@@ -1,4 +1,3 @@
-<!-- New File -->
 <template>
   <section class="records" id="records-section">
     <br>

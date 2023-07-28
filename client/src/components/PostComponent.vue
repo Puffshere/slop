@@ -1,4 +1,3 @@
-<!-- This is the main body of the app -->
 <template>
   <div>
     <div class="error" v-if="error">{{ error }}</div>
