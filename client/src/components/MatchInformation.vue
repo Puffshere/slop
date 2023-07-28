@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h3>Scores 2023</h3>
+      <h3>2023 WINNERS!</h3>
     </div>
     <p class="error" v-if="error">{{ error }}</p>
     <div class="create-post">

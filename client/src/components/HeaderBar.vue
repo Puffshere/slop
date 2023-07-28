@@ -23,7 +23,9 @@
                         Home
                     </a>
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
-                        Course Records
+                        <a href="#records-section">
+                            Course Records
+                        </a>
                     </li>
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
                         Rules

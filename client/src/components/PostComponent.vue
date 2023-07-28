@@ -1,17 +1,16 @@
 <template>
   <div>
     <div class="error" v-if="error">{{ error }}</div>
-    <h3>Scores 2023</h3>
+    <h3 class="Winners">2023 WINNERS!</h3>
   </div>
-
   <div class="create-post">
-    <label class="todaysWinner" for="create-post">Today's Winner!</label>
+    <label for="create-post">Today's Winner!</label>
     <br />
     <input type="text" id="create-post" v-model="text" placeholder="" />
     <button class="updateStyling" @click="showDiv">Update</button>
     <div v-show="showDivs">
       <br />
-      <input type="password" id="password" v-model="password" placeholder="Enter Password"/>
+      <input type="password" id="password" v-model="password" placeholder="Enter Password" />
       <button class="postStyling" v-on:click="createPost">Post</button>
     </div>
   </div>
@@ -28,8 +27,7 @@
         <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
           <td>
             {{
-              `${
-                post.createdAt.getMonth() + 1
+              `${post.createdAt.getMonth() + 1
               }/${post.createdAt.getDate()}/${post.createdAt.getFullYear()}`
             }}
           </td>
@@ -40,7 +38,7 @@
   </div>
 </template>
   
-  <script>
+<script>
 import PostService from "../PostService";
 
 export default {
@@ -88,7 +86,7 @@ export default {
 </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
+<style scoped>
 .error {
   opacity: 1;
   /* transition: opacity 5s ease-in-out; */
@@ -100,13 +98,16 @@ export default {
   transform: translateX(-50%);
 }
 
-.todaysWinner {
+.Winners {
   color: rgb(131, 112, 4);
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .updateStyling {
   padding-left: 5px;
 }
+
 .postStyling {
   padding-left: 5px;
 }

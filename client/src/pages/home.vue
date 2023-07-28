@@ -1,18 +1,18 @@
 <template>
     <HeaderBar />
-    <div class="golf-score">
+    <div class="golf-score">what the hell is happening?
       <br />
     <PostComponent />
     </div>
   </template>
   
   <script>
-  import PostComponent from '../components/PostComponent.vue';
-  import HeaderBar from '../components/HeaderBar.vue';
+  import PostComponent from './components/PostComponent.vue';
+  import HeaderBar from './components/HeaderBar.vue';
   
   
   export default {
-    name: 'Home',
+    name: 'App',
     components: {
       PostComponent,
       HeaderBar
@@ -21,7 +21,7 @@
   </script>
   
   <style>
-  #home {
+  #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

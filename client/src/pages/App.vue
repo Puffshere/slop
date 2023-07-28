@@ -1,21 +1,25 @@
 <template>
-  <section class="" id="records-section">
     <HeaderBar />
-    <div class="golf-score">what the hell is going on?
+    <div class="golf-score">
+      <!-- <a tabindex="1" href="#records-section" rel="noopener">Records</a> -->
       <br />
+    <PostComponent />
+    <Records />
     </div>
-    </section>
   </template>
   
   <script>
-
+  import PostComponent from '../components/PostComponent.vue';
   import HeaderBar from '../components/HeaderBar.vue';
+  import Records from '../components/Records.vue';
   
   
   export default {
-    name: 'Records',
+    name: 'App',
     components: {
-      HeaderBar
+      PostComponent,
+      HeaderBar,
+      Records
   }
   }
   </script>
