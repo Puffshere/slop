@@ -1,6 +1,4 @@
 <template>
-  <!-- <Transition name="fade" enter-active-class="animate__animated animate__tada"
-    leave-active-class="animate__animated animate__bounceOutRight"> -->
   <section class="records" id="records-section">
     <br>
     <div>
@@ -102,7 +100,6 @@
       </table>
     </div>
   </section>
-  <!-- </transition> -->
 </template>
   
 <script>
