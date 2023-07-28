@@ -1,4 +1,3 @@
-<!-- This is the footer -->
 <template>
     <div>
         <div class="header bg-gray-100">
