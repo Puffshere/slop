@@ -79,7 +79,8 @@ export default {
         return;
       }
       await PostService.insertPost(this.text);
-      this.posts = await PostService.getPosts();
+      window.location.reload();
+      // this.posts = await PostService.getPosts();
     },
   },
 };
