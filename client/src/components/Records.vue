@@ -19,17 +19,17 @@
         </thead>
         <tbody>
           <tr>
-            <td>Cottonwood</td>
+            <td class="pointer"><a href="https://cottonwood.ezlinksgolf.com/index.html#/search?utm_source=google&utm_medium=organic">Cottonwood</a></td>
             <td>96</td>
             <td>Shawn</td>
           </tr>
           <tr>
-            <td>Legends Temeku</td>
+            <td class="pointer"><a href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a></td>
             <td>94</td>
             <td>Jackson</td>
           </tr>
           <tr>
-            <td>AB North</td>
+            <td class="pointer"><a href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB North</a></td>
             <td>96</td>
             <td>Shawn</td>
           </tr>
@@ -51,27 +51,27 @@
         </thead>
         <tbody>
           <tr>
-            <td>Chula Vista</td>
+            <td class="pointer"><a href="https://www.chulavistagc.com/bookteetimes">Chula Vista</a></td>
             <td>79</td>
             <td>Shawn/Jackson</td>
           </tr>
           <tr>
-            <td>Menifee Palms</td>
+            <td class="pointer"><a href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee Palms</a></td>
             <td>79</td>
             <td>Shawn/Jackson</td>
           </tr>
           <tr>
-            <td>Menifee Lakes</td>
+            <td class="pointer"><a href="https://foreupsoftware.com/index.php/booking/19103/954#/teetimes">Menifee Lakes</a></td>
             <td>79</td>
             <td>Shawn/Jackson</td>
           </tr>
           <tr>
-            <td>Golf Club Rancho</td>
+            <td class="pointer"><a href="https://www.thegolfclubatranchocalifornia.com/book-a-tee-time/">Golf Club Rancho</a></td>
             <td>79</td>
             <td>Shawn/Jackson</td>
           </tr>
           <tr>
-            <td>Miramar</td>
+            <td class="pointer"><a href="https://www.chronogolf.com/club/miramar-memorial-golf-course#?course_id=3229&nb_holes=18">Miramar</a></td>
             <td>81</td>
             <td>Shawn/Jackson</td>
           </tr>
@@ -93,12 +93,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>Chula Vista</td>
+            <td class="pointer"><a href="https://www.chulavistagc.com/bookteetimes">Chula Vista</a></td>
             <td>69</td>
             <td>The Squad</td>
           </tr>
           <tr>
-            <td>Cottonwood</td>
+            <td class="pointer"><a href="https://cottonwood.ezlinksgolf.com/index.html#/search?utm_source=google&utm_medium=organic">Cottonwood</a></td>
             <td>73</td>
             <td>The Squad</td>
           </tr>
@@ -147,6 +147,10 @@ th,
 td {
   border: 1px solid rgb(100, 100, 100);
   padding: 8px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .courseRecords {
