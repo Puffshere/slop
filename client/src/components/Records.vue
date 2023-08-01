@@ -1,4 +1,3 @@
-<!-- These are the records -->
 <template>
   <section class="records" id="records-section">
     <br>
