@@ -56,7 +56,7 @@
         <tbody>
           <tr>
             <td class="pointer"><a href="https://www.chulavistagc.com/bookteetimes">Chula Vista</a></td>
-            <td class="scorecard">
+            <td class="pointer scorecard">
               <a @click="chula_vista" target="_blank">79</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="chula vista scorecard">
             </td>
@@ -71,7 +71,7 @@
           <tr>
             <td class="pointer"><a href="https://foreupsoftware.com/index.php/booking/19103/954#/teetimes">Menifee
                 Lakes</a></td>
-            <td class="scorecard">
+            <td class="pointer scorecard">
               <a @click="lakes" target="_blank">79</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="lakes scorecard">
             </td>
@@ -87,7 +87,7 @@
             <td class="pointer"><a
                 href="https://www.chronogolf.com/club/miramar-memorial-golf-course#?course_id=3229&nb_holes=18">Miramar</a>
             </td>
-            <td class="scorecard"><a @click="miramar" target="_blank">81</a>
+            <td class="pointer scorecard"><a @click="miramar" target="_blank">81</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="miramar scorecard">
             </td>
             <td>Shawn/Jackson</td>
