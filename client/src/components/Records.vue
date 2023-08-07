@@ -83,7 +83,10 @@
           <tr>
             <td class="pointer"><a href="https://www.thegolfclubatranchocalifornia.com/book-a-tee-time/">Golf Club
                 Rancho</a></td>
-            <td>79</td>
+            <td class="pointer scorecard">
+              <a @click="rancho" target="_blank">75</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="golf club at rancho scorecard">
+            </td>
             <td>Shawn/Jackson</td>
           </tr>
           <tr>
@@ -174,6 +177,10 @@ export default {
     },
     ABNorth1() {
       const imageSrc = require('../assets/scorecards/ABNorth1.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    rancho() {
+      const imageSrc = require('../assets/scorecards/rancho2.jpg');
       window.open(imageSrc, '_blank');
     }
   }
