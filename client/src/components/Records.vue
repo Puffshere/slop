@@ -32,6 +32,16 @@
           </tr>
           <tr>
             <td class="pointer"><a
+                href="https://letsgo.golf/mission-trails-golf-course/teeTimes/mission-trails-golf-course-california?">
+                Mission Trails</a></td>
+            <td class="pointer scorecard">
+              <a @click="MissionTrailsSingles" target="_blank">96</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="mission trails singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+          <tr>
+            <td class="pointer"><a
                 href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB
                 North</a></td>
             <td class="pointer scorecard">
@@ -58,7 +68,9 @@
         </thead>
         <tbody>
           <tr>
-            <td class="pointer"><a href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB North</a></td>
+            <td class="pointer"><a
+                href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB
+                North</a></td>
             <td class="pointer scorecard">
               <a @click="ABNorth2" target="_blank">86</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="admiral baker north 2 man scorecard">
@@ -181,6 +193,10 @@ export default {
     },
     chula_vista() {
       const imageSrc = require('../assets/scorecards/chula_vista.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    MissionTrailsSingles() {
+      const imageSrc = require('../assets/scorecards/mission_trails_singles.jpg');
       window.open(imageSrc, '_blank');
     },
     ABNorth1() {
