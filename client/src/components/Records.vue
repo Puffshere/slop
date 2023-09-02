@@ -35,7 +35,7 @@
                 href="https://letsgo.golf/mission-trails-golf-course/teeTimes/mission-trails-golf-course-california?">
                 Mission Trails</a></td>
             <td class="pointer scorecard">
-              <a @click="MissionTrailsSingles" target="_blank">96</a>
+              <a @click="MissionTrailsSingles" target="_blank">88</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="mission trails singles scorecard">
             </td>
             <td>Shawn</td>
@@ -196,7 +196,7 @@ export default {
       window.open(imageSrc, '_blank');
     },
     MissionTrailsSingles() {
-      const imageSrc = require('../assets/scorecards/mission_trails_singles.jpg');
+      const imageSrc = require('../assets/scorecards/mission_trails_singles_88.jpg');
       window.open(imageSrc, '_blank');
     },
     ABNorth1() {
