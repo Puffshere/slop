@@ -15,7 +15,7 @@
     </div>
   </div>
   <br />
-  <div class="container">
+  <div class="container flex">
     <table>
       <thead>
         <tr>
@@ -88,6 +88,9 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.container {
+  margin: 0 auto;
+}
 .error {
   opacity: 1;
   /* transition: opacity 5s ease-in-out; */

@@ -1,10 +1,11 @@
 <template>
     <div>
         <div class="header bg-gray-100">
-            <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
-                <div class="flex items-center justify-between">
+            <nav class="container col-12">
+                <div class="row flex items-center">
+                    <img class="flex col-6 logo" src="../assets/sloppyImage.png">
                     <a href="/"
-                        class="links title text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">SloppyGolf.com</a>
+                        class="links title col-6 text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">SloppyGolf.com</a>
                 </div>
             </nav>
         </div>
@@ -21,7 +22,15 @@ export default {
 .header {
     background-color: lightblue;
     background: linear-gradient(268deg, rgb(193, 220, 230), lightblue);
+    padding: 20px;
+    padding-left: 225px;
 
+}
+
+.logo {
+    width: 100%;
+    max-width: 75px;
+    padding: 0px;
 }
 
 .title {
@@ -32,5 +41,19 @@ export default {
 .links {
     cursor: pointer;
 }
+
+@media screen and (max-width: 575px) {
+            .header {
+                /* display: none; */
+                padding: 20px;
+                
+            }
+            .title {
+                /* position: absolute;
+                left: 40px; */
+                float: left;
+                margin-left: 0px !important;
+            }
+    }
 </style>
   

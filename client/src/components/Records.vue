@@ -5,7 +5,7 @@
     <div>
       <h1 class="courseRecords">Course Records</h1>
     </div>
-    <div class="container">
+    <div class="container flex">
       <table>
         <thead>
           <th colspan="3">
@@ -217,6 +217,9 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.container {
+  margin: 0 auto;
+}
 table {
   width: 100%;
   border-collapse: collapse;
