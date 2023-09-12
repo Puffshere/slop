@@ -27,13 +27,13 @@ export default {
 }
 
 .champs {
-  margin-top: -230px;
-  font-size: 80px;
+  margin-top: -170px;
+  font-size: 70px;
 }
 
 .champions {
   margin-top: 0px;
-  font-size: 80px;
+  font-size: 90px;
   padding-bottom: 15px;
   color: rgb(131, 112, 4);
 }
@@ -54,7 +54,7 @@ export default {
 
 @media screen and (max-width: 1030px) {
   .champs {
-    margin-top: -140px;
+    margin-top: -110px;
     font-size: 50px;
   }
   
@@ -96,7 +96,7 @@ export default {
 
 @media screen and (max-width: 575px) {
   .champs {
-    margin-top: -75px;
+    margin-top: -60px;
     font-size: 25px;
   }
   
@@ -110,7 +110,7 @@ export default {
 
 @media screen and (max-width: 400px) {
   .champs {
-    margin-top: -65px;
+    margin-top: -40x;
     font-size: 20px;
   }
   
@@ -124,7 +124,7 @@ export default {
 
 @media screen and (max-width: 375px) {
   .champs {
-    margin-top: -50px;
+    margin-top: -35px;
     font-size: 18px;
   }
   
