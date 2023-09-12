@@ -72,7 +72,7 @@
                 href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB
                 North</a></td>
             <td class="pointer scorecard">
-              <a @click="ABNorth2" target="_blank">86</a>
+              <a @click="ABNorth2" target="_blank">76</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="admiral baker north 2 man scorecard">
             </td>
             <td>Shawn/Jackson</td>
@@ -204,7 +204,7 @@ export default {
       window.open(imageSrc, '_blank');
     },
     ABNorth2() {
-      const imageSrc = require('../assets/scorecards/ABNorth2.jpg');
+      const imageSrc = require('../assets/scorecards/AB_North2.jpg');
       window.open(imageSrc, '_blank');
     },
     rancho() {

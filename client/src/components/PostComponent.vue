@@ -36,10 +36,20 @@
       </tbody>
     </table>
   </div>
+
+  <div>
+    <textarea v-model="userInput" placeholder="Type something..."></textarea>
+    <button @click="getGpt4Response">Ask GPT-4</button>
+    <div v-if="response">{{ response }}</div>
+  </div>
+
+
+
 </template>
   
 <script>
 import PostService from "../PostService";
+import axios from 'axios';
 
 export default {
   data() {
@@ -49,6 +59,8 @@ export default {
       posts: [],
       password: "",
       showDivs: false,
+      userInput: '',
+      response: ''
     };
   },
   async created() {
@@ -82,6 +94,33 @@ export default {
       window.location.reload();
       // this.posts = await PostService.getPosts();
     },
+
+    
+    async getGpt4Response() {
+      try {
+        // Replace with the endpoint provided by OpenAI (as of my last training data in September 2021, this URL and headers are hypothetical)
+        const endpoint = "https://api.openai.com/v2/completions";
+        const headers = {
+          "Authorization": "Bearer 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",
+          "Content-Type": "application/json"
+        };
+
+        const body = {
+          prompt: this.userInput,
+          max_tokens: 150
+        };
+
+        const result = await axios.post(endpoint, body, { headers });
+        if (result.data && result.data.choices && result.data.choices[0] && result.data.choices[0].text) {
+          this.response = result.data.choices[0].text.trim();
+        }
+      } catch (error) {
+        console.error("Error fetching data from GPT-4 API:", error);
+      }
+    }
+  
+
+
   },
 };
 </script>
