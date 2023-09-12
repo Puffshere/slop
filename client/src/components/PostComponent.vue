@@ -26,8 +26,6 @@
       <tbody>
         <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
           <td>{{ formatDate(post.createdAt) }}</td>
-
-          <!-- <td>{{`${post.createdAt.getMonth() + 1}/${post.createdAt.getDate()}/${post.createdAt.getFullYear()}`}}</td> -->
           <td>{{ post.text }}</td>
         </tr>
       </tbody>
@@ -37,7 +35,7 @@
   
 <script>
 import PostService from "../PostService";
-import axios from 'axios';
+
 
 export default {
   data() {

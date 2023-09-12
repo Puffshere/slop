@@ -1,5 +1,6 @@
 <template>
   <HeaderBar />
+  <br>
   <Awards />
   <div class="golf-score">
     <br />
