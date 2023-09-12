@@ -38,10 +38,94 @@ export default {
   color: rgb(131, 112, 4);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1280px) {
   .champs {
-    margin-top: -30px;
+    margin-top: -175px;
+    font-size: 60px;
+  }
+  
+  .champions {
+    margin-top: 0px;
+    font-size: 60px;
+    padding-bottom: 15px;
+    color: rgb(131, 112, 4);
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .champs {
+    margin-top: -140px;
+    font-size: 50px;
+  }
+  
+  .champions {
+    margin-top: 0px;
+    font-size: 60px;
+    padding-bottom: 15px;
+    color: rgb(131, 112, 4);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .champs {
+    margin-top: -120px;
+    font-size: 40px;
+  }
+  
+  .champions {
+    margin-top: 0px;
+    font-size: 40px;
+    padding-bottom: 15px;
+    color: rgb(131, 112, 4);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .champs {
+    margin-top: -100px;
+    font-size: 30px;
+  }
+  
+  .champions {
+    margin-top: 0px;
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: rgb(131, 112, 4);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .champs {
+    margin-top: -75px;
+    font-size: 25px;
+  }
+  
+  .champions {
+    margin-top: 0px;
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: rgb(131, 112, 4);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .champs {
+    margin-top: -65px;
     font-size: 20px;
+  }
+  
+  .champions {
+    margin-top: 0px;
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: rgb(131, 112, 4);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .champs {
+    margin-top: -50px;
+    font-size: 18px;
   }
   
   .champions {
@@ -50,7 +134,6 @@ export default {
     padding-bottom: 15px;
     color: rgb(131, 112, 4);
   }
-  
 }
 
 </style>
