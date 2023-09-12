@@ -25,12 +25,9 @@
       </thead>
       <tbody>
         <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
-          <td>
-            {{
-              `${post.createdAt.getMonth() + 1
-              }/${post.createdAt.getDate()}/${post.createdAt.getFullYear()}`
-            }}
-          </td>
+          <td>{{ formatDate(post.createdAt) }}</td>
+
+          <!-- <td>{{`${post.createdAt.getMonth() + 1}/${post.createdAt.getDate()}/${post.createdAt.getFullYear()}`}}</td> -->
           <td>{{ post.text }}</td>
         </tr>
       </tbody>
@@ -65,6 +62,11 @@ export default {
     showDiv() {
       this.showDivs = true;
     },
+    formatDate(dateStr) {
+    let localDate = new Date(dateStr);
+    localDate.setMinutes(localDate.getMinutes() + localDate.getTimezoneOffset());
+    return `${localDate.getMonth() + 1}/${localDate.getDate()}/${localDate.getFullYear()}`;
+  },
     async createPost() {
       if (this.password !== "6980") {
         this.error = "Incorrect password!";

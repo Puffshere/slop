@@ -1,5 +1,6 @@
 <template>
   <HeaderBar />
+  <Awards />
   <div class="golf-score">
     <br />
     <PostComponent />
@@ -11,8 +12,9 @@
 </template>
   
 <script>
-import PostComponent from '../components/PostComponent.vue';
 import HeaderBar from '../components/HeaderBar.vue';
+import Awards from '../components/Awards.vue';
+import PostComponent from '../components/PostComponent.vue';
 import Records from '../components/Records.vue';
 import Footer from '../components/Footer.vue';
 
@@ -20,8 +22,9 @@ import Footer from '../components/Footer.vue';
 export default {
   name: 'App',
   components: {
-    PostComponent,
     HeaderBar,
+    Awards,
+    PostComponent,
     Records,
     Footer
   }
