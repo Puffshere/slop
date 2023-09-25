@@ -111,12 +111,12 @@
           </tr>
           <tr>
             <td class="pointer booking"><a
-                href="https://www.chronogolf.com/club/miramar-memorial-golf-course#?course_id=3229&nb_holes=18">Miramar</a>
+                href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a>
             </td>
-            <td class="pointer scorecard"><a @click="miramar" target="_blank">81</a>
-              <img :src="imageSrc" v-if="imageSrc !== ''" alt="miramar scorecard">
+            <td class="pointer scorecard"><a @click="temeku2" target="_blank">80</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="temekum scorecard">
             </td>
-            <td>Shawn/Jackson</td>
+            <td>Shawn/Ron-Jack/Bock</td>
           </tr>
         </tbody>
       </table>
@@ -209,6 +209,10 @@ export default {
     },
     rancho() {
       const imageSrc = require('../assets/scorecards/rancho2.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    temeku2() {
+      const imageSrc = require('../assets/scorecards/temeku2.jpg');
       window.open(imageSrc, '_blank');
     }
   }
