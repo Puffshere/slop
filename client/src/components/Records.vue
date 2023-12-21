@@ -16,6 +16,17 @@
           </tr>
         </thead>
         <tbody>
+
+          <tr>
+            <td class="pointer booking"><a href="https://aviara.ezlinksgolf.com/index.html#/search">
+                Aviara</a></td>
+            <td class="pointer scorecard">
+              <a @click="aviara_singles" target="_blank">105</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="aviara singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
           <tr>
             <td class="pointer booking"><a
                 href="https://cottonwood.ezlinksgolf.com/index.html#/search?utm_source=google&utm_medium=organic">Cottonwood</a>
@@ -23,11 +34,13 @@
             <td>96</td>
             <td>Shawn</td>
           </tr>
+
           <tr>
             <td class="pointer booking"><a href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a></td>
             <td>94</td>
             <td>Jackson</td>
           </tr>
+
           <tr>
             <td class="pointer booking"><a
                 href="https://letsgo.golf/mission-trails-golf-course/teeTimes/mission-trails-golf-course-california?">
@@ -38,6 +51,17 @@
             </td>
             <td>Shawn</td>
           </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://www.chronogolf.com/club/miramar-memorial-golf-course">
+                Miramar</a></td>
+            <td class="pointer scorecard">
+              <a @click="miramar_singles" target="_blank">95</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="miramar singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
           <tr>
             <td class="pointer booking"><a
                 href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB
@@ -48,6 +72,26 @@
             </td>
             <td>Shawn</td>
           </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://www.redhawkgolfcourse.com/tee-times/">Redhawk</a></td>
+            <td class="pointer scorecard">
+              <a @click="redhawk_singles" target="_blank">96</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="redhawk singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/19461/1676#/teetimes">Seven
+                Hills</a></td>
+            <td class="pointer scorecard">
+              <a @click="seven_hills_singles" target="_blank">86</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="seven hills singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
@@ -65,6 +109,7 @@
           </tr>
         </thead>
         <tbody>
+
           <tr>
             <td class="pointer booking"><a
                 href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB
@@ -75,6 +120,16 @@
             </td>
             <td>Shawn/Jackson</td>
           </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://i-golfing.teesnap.net/">California Oaks</a></td>
+            <td class="pointer scorecard">
+              <a @click="california_oaks_doubles" target="_blank">73</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="california oaks doubles scorecard">
+            </td>
+            <td>Bock/Butryn</td>
+          </tr>
+
           <tr>
             <td class="pointer booking"><a href="https://www.chulavistagc.com/bookteetimes">Chula Vista</a></td>
             <td class="pointer scorecard">
@@ -83,21 +138,44 @@
             </td>
             <td>Shawn/Jackson</td>
           </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/21229/7359#/teetimes">Cross
+                Creek</a></td>
+            <td class="pointer scorecard">
+              <a @click="cross_creek_doubles" target="_blank">84</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="cross creek doubles scorecard">
+            </td>
+            <td>Shawn/Jackson</td>
+          </tr>
+
           <tr>
             <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
                 Palms</a></td>
             <td>79</td>
             <td>Shawn/Jackson</td>
           </tr>
+
           <tr>
             <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/19103/954#/teetimes">Menifee
                 Lakes</a></td>
             <td class="pointer scorecard">
-              <a @click="lakes" target="_blank">79</a>
+              <a @click="lakes_doubles" target="_blank">74</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="lakes scorecard">
             </td>
-            <td>Shawn/Jackson</td>
+            <td>Shawn/Bock</td>
           </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://www.chronogolf.com/club/miramar-memorial-golf-course">Miramar</a>
+            </td>
+            <td class="pointer scorecard">
+              <a @click="miramar_doubles" target="_blank">77</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="miramar doubles scorecard">
+            </td>
+            <td>Shawn/Bock</td>
+          </tr>
+
           <tr>
             <td class="pointer booking"><a href="https://www.thegolfclubatranchocalifornia.com/book-a-tee-time/">Golf Club
                 Rancho</a></td>
@@ -107,6 +185,7 @@
             </td>
             <td>Shawn/Jackson</td>
           </tr>
+
           <tr>
             <td class="pointer booking"><a href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a>
             </td>
@@ -115,6 +194,7 @@
             </td>
             <td>Shawn/Ron-Jack/Bock</td>
           </tr>
+
         </tbody>
       </table>
     </div>
@@ -132,11 +212,13 @@
           </tr>
         </thead>
         <tbody>
+
           <tr>
             <td class="pointer booking"><a href="https://www.chulavistagc.com/bookteetimes">Chula Vista</a></td>
             <td>69</td>
             <td>The Squad</td>
           </tr>
+
           <tr>
             <td class="pointer booking"><a
                 href="https://cottonwood.ezlinksgolf.com/index.html#/search?utm_source=google&utm_medium=organic">Cottonwood</a>
@@ -144,6 +226,7 @@
             <td>73</td>
             <td>The Squad</td>
           </tr>
+
         </tbody>
       </table>
     </div>
@@ -174,8 +257,12 @@ export default {
       await PostService.insertPost(this.text);
       this.posts = await PostService.getPosts();
     },
-    miramar() {
-      const imageSrc = require('../assets/scorecards/miramar.jpg');
+    aviara_singles() {
+      const imageSrc = require('../assets/scorecards/Aviara_singles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    miramar_singles() {
+      const imageSrc = require('../assets/scorecards/Miramar_singles.jpg');
       window.open(imageSrc, '_blank');
       // Use this code to open up scorecard image in table
       // if (this.imageSrc === require('../assets/bike/bike.jpg')) {
@@ -184,12 +271,24 @@ export default {
       //   this.imageSrc = require('../assets/bike/bike.jpg');
       // }
     },
-    lakes() {
-      const imageSrc = require('../assets/scorecards/lakes.jpg');
+    miramar_doubles() {
+      const imageSrc = require('../assets/scorecards/Miramar_doubles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    lakes_doubles() {
+      const imageSrc = require('../assets/scorecards/Lakes_doubles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    california_oaks_doubles() {
+      const imageSrc = require('../assets/scorecards/California_Oaks_doubles.jpg');
       window.open(imageSrc, '_blank');
     },
     chula_vista() {
       const imageSrc = require('../assets/scorecards/chula_vista.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    cross_creek_doubles() {
+      const imageSrc = require('../assets/scorecards/Cross_Creek_doubles.jpg');
       window.open(imageSrc, '_blank');
     },
     MissionTrailsSingles() {
@@ -206,6 +305,14 @@ export default {
     },
     rancho() {
       const imageSrc = require('../assets/scorecards/rancho2.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    redhawk_singles() {
+      const imageSrc = require('../assets/scorecards/Redhawk_singles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    seven_hills_singles() {
+      const imageSrc = require('../assets/scorecards/Seven_Hills_doubles.jpg');
       window.open(imageSrc, '_blank');
     },
     temeku2() {
