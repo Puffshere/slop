@@ -1,7 +1,5 @@
-<!-- These are the records -->
 <template>
   <section class="records" id="records-section">
-    <br>
     <div>
       <h1 class="courseRecords">Course Records</h1>
     </div>
@@ -110,8 +108,7 @@
             <td>Shawn/Jackson</td>
           </tr>
           <tr>
-            <td class="pointer booking"><a
-                href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a>
+            <td class="pointer booking"><a href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a>
             </td>
             <td class="pointer scorecard"><a @click="temeku2" target="_blank">80</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="temekum scorecard">
@@ -219,11 +216,11 @@ export default {
 };
 </script>
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
   margin: 0 auto;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;

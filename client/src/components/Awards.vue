@@ -6,14 +6,7 @@
   </div>
 </template>
   
-<script>
 
-export default {
-
-};
-</script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
   margin: 0 auto;
@@ -43,7 +36,7 @@ export default {
     margin-top: -175px;
     font-size: 60px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 60px;
@@ -57,7 +50,7 @@ export default {
     margin-top: -110px;
     font-size: 50px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 60px;
@@ -71,7 +64,7 @@ export default {
     margin-top: -120px;
     font-size: 40px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 40px;
@@ -85,7 +78,7 @@ export default {
     margin-top: -100px;
     font-size: 30px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 30px;
@@ -99,7 +92,7 @@ export default {
     margin-top: -60px;
     font-size: 25px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 25px;
@@ -113,7 +106,7 @@ export default {
     margin-top: -40x;
     font-size: 20px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 25px;
@@ -127,7 +120,7 @@ export default {
     margin-top: -35px;
     font-size: 18px;
   }
-  
+
   .champions {
     margin-top: 0px;
     font-size: 20px;
@@ -135,5 +128,4 @@ export default {
     color: rgb(131, 112, 4);
   }
 }
-
 </style>

@@ -1,12 +1,6 @@
 <template>
   <HeaderBar />
-  <br>
-  <Awards />
-  <div class="golf-score">
-    <br />
-    <PostComponent />
-    <Records />
-  </div>
+  <router-view />
   <br>
   <br>
   <Footer />
@@ -14,9 +8,6 @@
   
 <script>
 import HeaderBar from '../components/HeaderBar.vue';
-import Awards from '../components/Awards.vue';
-import PostComponent from '../components/PostComponent.vue';
-import Records from '../components/Records.vue';
 import Footer from '../components/Footer.vue';
 
 
@@ -24,9 +15,6 @@ export default {
   name: 'App',
   components: {
     HeaderBar,
-    Awards,
-    PostComponent,
-    Records,
     Footer
   }
 }
