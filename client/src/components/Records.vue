@@ -3,6 +3,7 @@
     <div>
       <h1 class="courseRecords">Course Records</h1>
     </div>
+    <div class="background"></div>
     <br>
     <div class="container flex">
       <table>
@@ -325,6 +326,17 @@ export default {
 </script>
   
 <style scoped>
+.background {
+  background-image: url('../assets/course_records_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  padding: 20px;
+  box-shadow: 5px 5px 30px black;
+}
+
+
 .container {
   margin: 0 auto;
   box-shadow: 5px 5px 30px black;
