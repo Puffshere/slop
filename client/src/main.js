@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import './index.css'
 import App from './pages/App.vue'
-import Home from './components/Home.vue'
+import Home from './pages/Home.vue'
 import Rules from '../src/pages/Rules.vue'
 import CourseRecords from '../src/pages/CourseRecords.vue'
 

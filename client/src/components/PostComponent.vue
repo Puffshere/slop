@@ -1,18 +1,21 @@
 <template>
-  <div>
-    <div class="error" v-if="error">{{ error }}</div>
-    <h3 class="Winners">2023 WINNERS!</h3>
-  </div>
-  <div class="create-post">
-    <label for="create-post">Today's Winner!</label>
-    <br />
-    <input type="text" id="create-post" v-model="text" placeholder="" />
-    <button class="updateStyling" @click="showDiv">Update</button>
-    <div v-show="showDivs">
-      <br />
-      <input type="password" id="password" v-model="password" placeholder="Enter Password" />
-      <button class="postStyling" v-on:click="createPost">Post</button>
+  <div class="background">
+    <div>
+      <div class="error" v-if="error">{{ error }}</div>
+      <h3 class="Winners">2023 WINNERS!</h3>
     </div>
+    <div class="create-post">
+      <label for="create-post">Today's Winner!</label>
+      <br>
+      <input type="text" id="create-post" v-model="text" placeholder="" />
+      <button class="updateStyling" @click="showDiv">Update</button>
+      <div v-show="showDivs">
+        <br />
+        <input type="password" id="password" v-model="password" placeholder="Enter Password" />
+        <button class="postStyling" v-on:click="createPost">Post</button>
+      </div>
+    </div>
+    <br>
   </div>
   <br />
   <div class="container flex">
@@ -61,10 +64,10 @@ export default {
       this.showDivs = true;
     },
     formatDate(dateStr) {
-    let localDate = new Date(dateStr);
-    localDate.setMinutes(localDate.getMinutes() + localDate.getTimezoneOffset());
-    return `${localDate.getMonth() + 1}/${localDate.getDate()}/${localDate.getFullYear()}`;
-  },
+      let localDate = new Date(dateStr);
+      localDate.setMinutes(localDate.getMinutes() + localDate.getTimezoneOffset());
+      return `${localDate.getMonth() + 1}/${localDate.getDate()}/${localDate.getFullYear()}`;
+    },
     async createPost() {
       if (this.password !== "6980") {
         this.error = "Incorrect password!";
@@ -93,7 +96,9 @@ export default {
 <style scoped>
 .container {
   margin: 0 auto;
+  box-shadow: 5px 5px 30px black;
 }
+
 .error {
   opacity: 1;
   /* transition: opacity 5s ease-in-out; */
@@ -106,9 +111,19 @@ export default {
 }
 
 .Winners {
-  color: rgb(131, 112, 4);
+  color: rgb(253, 253, 253);
+  text-shadow: 5px 5px 5px black;
   font-size: 25px;
   padding-bottom: 10px;
+}
+
+.background {
+  background-image: url('../assets/golf_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 5px 5px 30px black;
 }
 
 .updateStyling {
@@ -129,5 +144,4 @@ th,
 td {
   border: 1px solid rgb(100, 100, 100);
   padding: 8px;
-}
-</style>
+}</style>

@@ -11,7 +11,7 @@
 .container {
   margin: 0 auto;
   Padding-top: 20px;
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 5px 5px 30px black;
 }
 
 .banner {
@@ -41,7 +41,6 @@
     margin-top: 0px;
     font-size: 60px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 
@@ -55,7 +54,6 @@
     margin-top: 0px;
     font-size: 60px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 
@@ -69,7 +67,6 @@
     margin-top: 0px;
     font-size: 40px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 
@@ -83,7 +80,6 @@
     margin-top: 0px;
     font-size: 30px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 
@@ -97,7 +93,6 @@
     margin-top: 0px;
     font-size: 25px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 
@@ -111,7 +106,6 @@
     margin-top: 0px;
     font-size: 25px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 
@@ -125,7 +119,6 @@
     margin-top: 0px;
     font-size: 20px;
     padding-bottom: 15px;
-    color: rgb(131, 112, 4);
   }
 }
 </style>

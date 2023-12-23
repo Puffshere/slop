@@ -3,6 +3,7 @@
     <div>
       <h1 class="courseRecords">Course Records</h1>
     </div>
+    <br>
     <div class="container flex">
       <table>
         <thead>
@@ -326,6 +327,7 @@ export default {
 <style scoped>
 .container {
   margin: 0 auto;
+  box-shadow: 5px 5px 30px black;
 }
 
 table {
@@ -354,8 +356,11 @@ td {
 
 .courseRecords {
   color: rgb(131, 112, 4);
-  font-size: 25px;
-  padding-bottom: 15px;
+  font-size: 40px;
+  padding: 15px 0px;
+  text-shadow: 1px 1px 1px rgb(156, 156, 156);
+  background-color: rgb(220, 220, 221);
+  box-shadow: 5px 5px 30px black;
 }
 
 img {
