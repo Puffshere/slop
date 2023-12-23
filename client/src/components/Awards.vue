@@ -1,4 +1,5 @@
 <template>
+  <br>
   <div class="container">
     <img class="flex banner" src="../assets/Congrats_banner.png">
     <div class="champs">Shawn/Jackson</div>
