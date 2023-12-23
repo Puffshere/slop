@@ -20,12 +20,13 @@
   <br />
   <div class="container flex">
     <table>
-      <thead>
+      <thead class="head">
         <tr>
           <th>Date</th>
           <th>Winner</th>
         </tr>
       </thead>
+      <br>
       <tbody>
         <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
           <td>{{ formatDate(post.createdAt) }}</td>
@@ -147,6 +148,7 @@ export default {
 
 .postStyling {
   padding-left: 5px;
+  text-shadow: 1px 2px 2px black;
 }
 
 table {
@@ -154,9 +156,15 @@ table {
   border-collapse: collapse;
 }
 
+.head {
+  border-bottom: 3px solid rgb(104, 104, 104); 
+  box-shadow: 5px 5px 30px rgb(53, 53, 53);
+}
+
 table,
 th,
 td {
-  border: 1px solid rgb(100, 100, 100);
+  border: 1px solid rgb(97, 97, 97);
+  box-shadow: 1px 2px 5px rgb(53, 53, 53);
   padding: 8px;
 }</style>

@@ -338,7 +338,8 @@ table {
 table,
 th,
 td {
-  border: 1px solid rgb(100, 100, 100);
+  border: 1px solid rgb(97, 97, 97);
+  box-shadow: 1px 2px 5px rgb(53, 53, 53);
   padding: 8px;
 }
 
