@@ -7,7 +7,7 @@
     <div class="create-post">
       <label for="create-post">Today's Winner!</label>
       <br>
-      <input type="text" id="create-post" v-model="text" placeholder="" />
+      <input class="input" type="text" id="create-post" v-model="text" placeholder="" />
       <button class="updateStyling" @click="showDiv">Update</button>
       <div v-show="showDivs">
         <br />
@@ -112,9 +112,17 @@ export default {
 
 .Winners {
   color: rgb(253, 253, 253);
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 1px 4px 3px black;
   font-size: 25px;
   padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.input {
+  max-width: 150px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .background {
@@ -126,8 +134,15 @@ export default {
   box-shadow: 5px 5px 30px black;
 }
 
+.create-post {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 2px 2px black;
+}
+
 .updateStyling {
   padding-left: 5px;
+  text-shadow: 1px 2px 2px black;
 }
 
 .postStyling {
