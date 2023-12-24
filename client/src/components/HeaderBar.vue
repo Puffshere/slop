@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="navbar">
         <div class="header bg-gray-100">
             <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
                 <div class="flex items-center justify-between">
@@ -49,6 +49,17 @@ export default {
 };
 </script>
 <style scoped>
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  /* Add other styles here like background-color, padding, etc. */
+}
+
+
 .header {
     background-color: lightblue;
     background: linear-gradient(268deg, rgb(193, 220, 230), lightblue);

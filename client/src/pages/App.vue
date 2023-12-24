@@ -1,5 +1,9 @@
 <template>
   <HeaderBar />
+  <br>
+  <br>
+  <br>
+  <br>
   <router-view />
   <br>
   <br>
