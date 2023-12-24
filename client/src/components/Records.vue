@@ -248,7 +248,7 @@ export default {
   },
   mounted() {
     const img = new Image();
-    img.src = require('../assets/course_records_background.jpg');
+    img.src = require('../assets/course_records_background.jpg').default;
   },
   methods: {
     async createPost() {
