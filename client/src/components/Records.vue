@@ -246,6 +246,10 @@ export default {
       imageSrc: ""
     };
   },
+  mounted() {
+    const img = new Image();
+    img.src = require('../assets/course_records_background.jpg');
+  },
   methods: {
     async createPost() {
       // Check if the entered password is correct
