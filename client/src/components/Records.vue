@@ -378,6 +378,10 @@ td {
   text-shadow: 1px 1px 1px rgb(156, 156, 156);
   background-color: rgb(220, 220, 221);
   box-shadow: 5px 5px 30px black;
+
+  transform: translate3d(0, 0, 0);
+
+
 }
 
 img {
