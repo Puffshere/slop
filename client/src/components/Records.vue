@@ -9,7 +9,6 @@
           <th colspan="3">
             SINGLES
           </th>
-          <br>
           <tr>
             <th>Course</th>
             <th>Score</th>
@@ -103,7 +102,6 @@
           <th colspan="3">
             2 PLAYERS
           </th>
-          <br>
           <tr>
             <th>Course</th>
             <th>Score</th>
@@ -207,7 +205,6 @@
           <th colspan="3">
             4 PLAYERS
           </th>
-          <br>
           <tr>
             <th>Course</th>
             <th>Score</th>
