@@ -330,6 +330,16 @@ export default {
 </script>
   
 <style scoped>
+
+.courseRecords {
+  color: rgb(131, 112, 4);
+  font-size: 40px;
+  padding: 15px 0px;
+  text-shadow: 1px 1px 1px rgb(156, 156, 156);
+  background-color: rgb(220, 220, 221);
+  box-shadow: 5px 5px 30px black;
+}
+
 .background {
   background-image: url('../assets/course_records_background_new.png');
   background-size: cover;
@@ -371,17 +381,8 @@ td {
   color: rgb(131, 112, 4);
 }
 
-.courseRecords {
-  color: rgb(131, 112, 4);
-  font-size: 40px;
-  padding: 15px 0px;
-  text-shadow: 1px 1px 1px rgb(156, 156, 156);
-  background-color: rgb(220, 220, 221);
-  box-shadow: 5px 5px 30px black;
-}
-
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 </style>
