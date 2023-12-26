@@ -341,6 +341,7 @@ export default {
   min-height: 200px;
   padding: 20px;
   box-shadow: 5px 5px 30px black;
+  max-width: 100vw;
 }
 
 
