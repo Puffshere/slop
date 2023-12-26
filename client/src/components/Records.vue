@@ -1,8 +1,6 @@
 <template>
   <section class="records" id="records-section">
-    <div>
-      <h1 class="courseRecords">Course Records</h1>
-    </div>
+    <h1 class="courseRecords">Course Records</h1>
     <div class="background"></div>
     <br>
     <div class="container flex">
@@ -246,10 +244,6 @@ export default {
       imageSrc: ""
     };
   },
-  mounted() {
-    const img = new Image();
-    img.src = require('../assets/course_records_background.jpg').default;
-  },
   methods: {
     async createPost() {
       // Check if the entered password is correct
@@ -330,7 +324,6 @@ export default {
 </script>
   
 <style scoped>
-
 .courseRecords {
   color: rgb(131, 112, 4);
   font-size: 40px;
@@ -381,8 +374,4 @@ td {
   color: rgb(131, 112, 4);
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 </style>
