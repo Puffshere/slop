@@ -326,7 +326,7 @@ export default {
 <style scoped>
 .courseRecords {
   color: rgb(131, 112, 4);
-  font-size: 40px;
+  font-size: 35px;
   padding: 15px 0px;
   text-shadow: 1px 1px 1px rgb(156, 156, 156);
   background-color: rgb(220, 220, 221);
@@ -334,10 +334,6 @@ export default {
 }
 
 .background {
-  /* background-image: url('../assets/course_records_background_new.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   background: url('../assets/course_records_background.jpg') center/cover no-repeat;
   min-height: 150px;
   padding: 20px;
