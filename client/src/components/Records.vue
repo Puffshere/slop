@@ -331,7 +331,7 @@ export default {
   
 <style scoped>
 .background {
-  background-image: url('../assets/course_records_background.jpg');
+  background-image: url('../assets/course_records_background_new.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,10 +378,6 @@ td {
   text-shadow: 1px 1px 1px rgb(156, 156, 156);
   background-color: rgb(220, 220, 221);
   box-shadow: 5px 5px 30px black;
-
-  transform: translate3d(0, 0, 0);
-
-
 }
 
 img {
