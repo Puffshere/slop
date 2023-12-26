@@ -334,14 +334,15 @@ export default {
 }
 
 .background {
-  background-image: url('../assets/course_records_background_new.png');
+  /* background-image: url('../assets/course_records_background_new.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  min-height: 200px;
+  background-repeat: no-repeat; */
+  background: url('../assets/course_records_background.jpg') center/cover no-repeat;
+  min-height: 150px;
   padding: 20px;
   box-shadow: 5px 5px 30px black;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 
