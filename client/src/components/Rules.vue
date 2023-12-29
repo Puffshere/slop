@@ -16,7 +16,10 @@
       <li>When playing from the selected spot, players may place the ball within one club length, no closer to the hole,
         maintaining the same condition (e.g., rough or fairway).</li>
       <li>On the green, the ball should be placed within six inches of the selected spot, not nearer to the hole.</li>
-      <li>When playing from a bunker, players must not ground their club before the shot.</li>
+      <li>When playing from a bunker, players must not ground their clubs before the shot. If a player grounds their club,
+        a penalty stroke is incurred. The penalty stroke is only added if the shot from the player who grounded their club
+        is used.
+      </li>
       <li>White stakes or lines define out of bounds. A penalty stroke is incurred, and the team must play from the
         original spot or use their partner's shot.</li>
       <li>For lateral water hazards (marked with red stakes/lines), players may drop within two club lengths from where
@@ -80,17 +83,19 @@
 }
 
 .rulesList li {
-    counter-increment: rule-number;
-    margin-bottom: 10px;
-    padding-left: 30px;
-    padding-bottom: 10px; /* Added padding at the bottom for spacing */
-    border-bottom: 1px solid #ddd; /* This adds a line between the items */
-    position: relative;
+  counter-increment: rule-number;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  /* Added padding at the bottom for spacing */
+  border-bottom: 1px solid #ddd;
+  /* This adds a line between the items */
+  position: relative;
 }
 
 /* Adjust the last item to not have a bottom border */
 .rulesList li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 
