@@ -124,6 +124,8 @@ export default {
   margin-top: 10px;
   margin-right: 10px;
   border-radius: 5px;
+  color: rgb(39, 39, 39);
+  padding: 0 10px;
 }
 
 .background {
