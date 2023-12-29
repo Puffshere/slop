@@ -48,7 +48,7 @@
   box-shadow: 5px 5px 30px black;
   display: flex;
   align-items: center;
-  margin-top: -30px;
+  margin-top: -40px;
   background-color: black;
 }
 
