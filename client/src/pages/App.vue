@@ -37,7 +37,4 @@ body {
   background: linear-gradient(268deg, #c3c4c4, #f3f3f3);
 }
 
-.golfLogo {
-  max-width: 20vh;
-}
 </style>
