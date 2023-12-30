@@ -334,7 +334,7 @@ export default {
 }
 
 .background {
-  background: url('../assets/course_records_background.jpg') center/cover no-repeat;
+  background: url('../assets/course_records_background_new_resolution.png') center/cover no-repeat;
   min-height: 150px;
   padding: 20px;
   box-shadow: 5px 5px 30px black;
