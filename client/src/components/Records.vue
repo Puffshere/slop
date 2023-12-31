@@ -345,6 +345,7 @@ export default {
 .container {
   margin: 0 auto;
   box-shadow: 5px 5px 30px black;
+  padding: 12px;
 }
 
 table {
