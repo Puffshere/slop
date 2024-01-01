@@ -5,6 +5,10 @@ import App from './pages/App.vue'
 import Home from './pages/Home.vue'
 import Rules from '../src/pages/Rules.vue'
 import CourseRecords from '../src/pages/CourseRecords.vue'
+import Vue from 'vue';
+import VueMeta from 'vue-meta';
+
+Vue.use(VueMeta);
 
 // Create the router instance
 const router = createRouter({
