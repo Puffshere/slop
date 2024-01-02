@@ -103,10 +103,10 @@ export default {
 
 .background,
 h1 {
-  color: rgb(182, 180, 180);
+  color: rgb(204, 202, 202);
   font-size: xx-large;
   letter-spacing: 1px;
-  text-shadow: 13px 13px 3px rgba(59, 59, 61, 0.521);
+  text-shadow: 13px 13px 3px rgba(59, 59, 61, 0.651);
 }
 
 .create-post {
