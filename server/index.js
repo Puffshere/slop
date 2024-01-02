@@ -11,7 +11,6 @@ const posts = require('./routes/api/posts');
 app.use('/api/posts', posts);
 
 if (process.env.NODE_ENV === 'production') {
-    // Serve static files with cache control
     app.use(express.static(__dirname + '/public/', {
         setHeaders: function (res, path) {
             res.set('Cache-Control', 'public, max-age=18000');
