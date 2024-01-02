@@ -75,13 +75,13 @@
 
 .container {
   padding: 12px;
-  margin-bottom: -15px;
+  margin-bottom: -25px;
   box-shadow: 5px 5px 30px black;
 }
 
 .rulesContainer {
   background-color: #cccccc;
-  margin-top: -20px;
+  margin-top: -40px;
   box-shadow: -10px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
