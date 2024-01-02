@@ -16,9 +16,15 @@ const paths = [
     changefreq: 'yearly'
   },
   {
-    path: '/rules/',
+    path: '/results/',
     lastmod: '2021-11-22',
     priority: 0.8,
+    changefreq: 'yearly'
+  },
+  {
+    path: '/rules/',
+    lastmod: '2021-11-22',
+    priority: 0.7,
     changefreq: 'yearly'
   }
 ];
