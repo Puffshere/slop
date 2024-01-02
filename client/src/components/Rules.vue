@@ -76,6 +76,7 @@
 .container {
   padding: 12px;
   margin-bottom: -15px;
+  box-shadow: 5px 5px 30px black;
 }
 
 .rulesContainer {
