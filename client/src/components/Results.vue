@@ -1,8 +1,10 @@
 <template>
-  <div class="background">
-        <h1>2023 Final Results</h1>
-      </div>
-    <br>
+  <div class="results">
+    <div class="background">
+      <h1>2023 Final Results</h1>
+    </div>
+  </div>
+  <br>
   <div class="container flex">
     <table>
       <thead class="head">
@@ -89,6 +91,16 @@ export default {
   padding: 0 10px;
 }
 
+.results {
+  background-image: url('../assets/main_results_background.webp');
+  background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 5px 5px 30px black;
+}
+
 .background {
   background-image: url('../assets/results_background.webp');
   background-size: contain;
@@ -97,9 +109,10 @@ export default {
   background-repeat: no-repeat;
   padding: 20px;
   box-shadow: 5px 5px 30px black;
-  background-color: #161010;
 }
-.background, h1 {
+
+.background,
+h1 {
   color: rgb(194, 194, 194);
   font-size: xx-large;
 }
@@ -126,7 +139,7 @@ table {
 }
 
 .head {
-  border-bottom: 3px solid rgb(104, 104, 104); 
+  border-bottom: 3px solid rgb(104, 104, 104);
   box-shadow: 5px 5px 30px rgb(53, 53, 53);
 }
 
