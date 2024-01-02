@@ -15,7 +15,7 @@ const router = createRouter({
             path: '/', 
             component: Home, 
             meta: { 
-                title: 'Home Page - SloppyGolf.com',
+                title: 'SloppyGolf.com',
                 metaTags: [
                     {
                         name: 'description',
@@ -28,7 +28,7 @@ const router = createRouter({
             path: '/records', 
             component: CourseRecords, 
             meta: { 
-                title: 'Course Records - SloppyGolf.com',
+                title: 'SloppyGolf.com - Course Records',
                 metaTags: [
                     {
                         name: 'description',
@@ -41,7 +41,7 @@ const router = createRouter({
             path: '/rules', 
             component: Rules, 
             meta: { 
-                title: 'Rules - SloppyGolf.com',
+                title: 'SloppyGolf.com - Rules 2024',
                 metaTags: [
                     {
                         name: 'description',
