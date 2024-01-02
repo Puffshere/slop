@@ -7,7 +7,6 @@ import Rules from '../src/pages/Rules.vue'
 import CourseRecords from '../src/pages/CourseRecords.vue'
 
 
-// Create the router instance
 const router = createRouter({
     history: createWebHistory(),
     routes: [
