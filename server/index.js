@@ -11,8 +11,14 @@ const posts = require('./routes/api/posts');
 app.use('/api/posts', posts);
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(__dirname + '/public/'));
+    // Serve static files with cache control
+    app.use(express.static(__dirname + '/public/', {
+        setHeaders: function (res, path) {
+            res.set('Cache-Control', 'public, max-age=300'); // 5 minutes cache
+        }
+    }));
 
+    // Handle SPA
     app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
 }
 
