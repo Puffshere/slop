@@ -13,6 +13,10 @@
   margin: 0 auto;
   Padding-top: 20px;
   box-shadow: 5px 5px 30px black;
+  background-image: url('../assets/main_award_background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner {
