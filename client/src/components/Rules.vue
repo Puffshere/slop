@@ -81,7 +81,7 @@
 
 .rulesContainer {
   background-color: #cccccc;
-  margin-top: -40px;
+  margin-top: -20px;
   box-shadow: -10px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
