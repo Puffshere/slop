@@ -94,13 +94,10 @@
   margin-bottom: 10px;
   padding-left: 30px;
   padding-bottom: 10px;
-  /* Added padding at the bottom for spacing */
   border-bottom: 1px solid #ddd;
-  /* This adds a line between the items */
   position: relative;
 }
 
-/* Adjust the last item to not have a bottom border */
 .rulesList li:last-child {
   border-bottom: none;
 }
@@ -113,13 +110,10 @@
   font-size: 18px;
   font-weight: bold;
   color: #4a90e2;
-  /* Stylish blue for numbers */
 }
 
-/* Additional Styling */
 .rulesList li:hover {
   background-color: #eef4fd;
-  /* Light blue background on hover */
   cursor: pointer;
 }
 
