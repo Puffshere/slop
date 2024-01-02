@@ -1,4 +1,4 @@
-import { createApp, nextTick } from 'vue'
+import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import './index.css'
 import App from './pages/App.vue'
@@ -53,26 +53,26 @@ const router = createRouter({
     ]
 })
 
-router.afterEach((to) => {
-    nextTick(() => {
-        // Update title
-        document.title = to.meta.title || 'SloppyGolf.com';
+// router.afterEach((to) => {
+//     nextTick(() => {
+//         // Update title
+//         document.title = to.meta.title || 'SloppyGolf.com';
 
-        // Remove existing meta tags
-        Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
+//         // Remove existing meta tags
+//         Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
 
-        // Add new meta tags
-        to.meta.metaTags?.forEach(tagDef => {
-            const tag = document.createElement('meta');
-            Object.keys(tagDef).forEach(key => {
-                tag.setAttribute(key, tagDef[key]);
-            });
+//         // Add new meta tags
+//         to.meta.metaTags?.forEach(tagDef => {
+//             const tag = document.createElement('meta');
+//             Object.keys(tagDef).forEach(key => {
+//                 tag.setAttribute(key, tagDef[key]);
+//             });
 
-            tag.setAttribute('data-vue-router-controlled', '');
-            document.head.appendChild(tag);
-        });
-    });
-});
+//             tag.setAttribute('data-vue-router-controlled', '');
+//             document.head.appendChild(tag);
+//         });
+//     });
+// });
 
 const app = createApp(App)
 
