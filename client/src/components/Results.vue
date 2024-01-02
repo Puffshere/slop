@@ -97,7 +97,7 @@ export default {
   background-repeat: no-repeat;
   padding: 20px;
   box-shadow: 5px 5px 30px black;
-  background-color: black;
+  background-color: #161010;
 }
 .background, h1 {
   color: rgb(194, 194, 194);
