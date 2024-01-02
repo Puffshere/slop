@@ -7,7 +7,7 @@
                     <a href="/"
                         class="links title text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">SloppyGolf.com</a>
                     <!-- Mobile menu button -->
-                    <div @click="showMenu = !showMenu" class="flex md:hidden">
+                    <div @click="showMenu = !showMenu" title="Hamburger" class="flex md:hidden">
                         <button type="button"
                             class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400">
                             <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
