@@ -75,7 +75,6 @@
 
 .container {
   padding: 12px;
-  margin-bottom: -25px;
   box-shadow: 5px 5px 30px black;
 }
 
