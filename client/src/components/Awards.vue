@@ -1,7 +1,7 @@
 <template>
   <br>
   <div class="container">
-    <img class="flex banner" src="../assets/Congrats_banner.png">
+    <img class="flex banner" src="../assets/Congrats_banner.png" alt="congrats banner image">
     <div class="champs">Shawn/Jackson</div>
     <div class="champions">2023 CHAMPIONS!</div>
   </div>

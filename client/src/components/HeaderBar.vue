@@ -3,7 +3,7 @@
         <div class="header bg-gray-100">
             <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
                 <div class="flex items-center justify-between">
-                    <img class="flex logo" src="../assets/sloppyImage.png">
+                    <img class="flex logo" src="../assets/sloppyImage.png" alt="main logo image">
                     <a href="/"
                         class="links title text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">SloppyGolf.com</a>
                     <!-- Mobile menu button -->

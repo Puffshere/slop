@@ -3,7 +3,7 @@
         <div class="header bg-gray-100">
             <nav class="container col-12">
                 <div class="row flex items-center">
-                    <img class="flex col-6 logo" src="../assets/sloppyImage.png">
+                    <img class="flex col-6 logo" src="../assets/sloppyImage.png" alt="logo image">
                     <a href="/"
                         class="links title col-6 text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">SloppyGolf.com</a>
                 </div>
