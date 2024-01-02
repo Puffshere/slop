@@ -24,7 +24,6 @@ export default {
     background: linear-gradient(268deg, rgb(193, 220, 230), lightblue);
     padding: 20px;
     padding-left: 225px;
-
 }
 
 .logo {
@@ -44,13 +43,10 @@ export default {
 
 @media screen and (max-width: 575px) {
             .header {
-                /* display: none; */
                 padding: 20px;
                 
             }
             .title {
-                /* position: absolute;
-                left: 40px; */
                 float: left;
                 margin-left: 0px !important;
             }
