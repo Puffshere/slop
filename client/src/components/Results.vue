@@ -106,7 +106,7 @@ h1 {
   color: rgb(182, 180, 180);
   font-size: xx-large;
   letter-spacing: 1px;
-  text-shadow: 13px 13px 3px rgba(59, 59, 61, 0.377);
+  text-shadow: 13px 13px 3px rgba(59, 59, 61, 0.521);
 }
 
 .create-post {
