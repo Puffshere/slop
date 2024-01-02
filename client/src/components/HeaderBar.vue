@@ -55,7 +55,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  z-index: 1000;
 }
 
 
