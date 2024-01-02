@@ -98,10 +98,9 @@ export default {
   padding: 20px;
   box-shadow: 5px 5px 30px black;
   background-color: black;
-
 }
 .background, h1 {
-  color: white;
+  color: rgb(194, 194, 194);
   font-size: xx-large;
 }
 
