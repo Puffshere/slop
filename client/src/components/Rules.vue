@@ -75,12 +75,13 @@
 
 .container {
   padding: 12px;
+  margin-bottom: -15px;
 }
 
 .rulesContainer {
   background-color: #cccccc;
   margin-top: -40px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .rulesList {

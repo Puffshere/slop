@@ -94,17 +94,7 @@ export default {
 .results {
   background-image: url('../assets/main_results_background.webp');
   background-size: cover;
-  min-height: 180px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  box-shadow: 5px 5px 30px black;
-}
-
-.background {
-  background-image: url('../assets/results_background.webp');
-  background-size: contain;
-  min-height: 120px;
+  min-height: 100px;
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
@@ -113,8 +103,10 @@ export default {
 
 .background,
 h1 {
-  color: rgb(194, 194, 194);
+  color: rgb(182, 180, 180);
   font-size: xx-large;
+  letter-spacing: 1px;
+  text-shadow: 13px 13px 3px rgba(59, 59, 61, 0.377);
 }
 
 .create-post {
