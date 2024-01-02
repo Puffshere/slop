@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon server/index.js",
-    "start": "node server/index.js"
+    "dev": "concurrently \"cd client && vue-cli-service serve\" \"node server/index.js\"",
+    "start": "node server/index.js",
+    "build-client": "cd client && npm run build"
   },
   "dependencies": {
     "axios": "^1.5.0",
@@ -27,6 +28,7 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.2",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "nodemon": "^2.0.20",
