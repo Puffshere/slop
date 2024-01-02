@@ -130,7 +130,7 @@ export default {
 }
 
 .background {
-  background-image: url('../assets/golf_background.jpg');
+  background-image: url('../assets/golf_background.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
