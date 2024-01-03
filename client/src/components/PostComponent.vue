@@ -209,8 +209,7 @@ td {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20px;
   box-shadow: 5px 5px 30px black;
-  min-height: 250px;
+  min-height: 220px;
 }
 </style>
