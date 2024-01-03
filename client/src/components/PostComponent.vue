@@ -35,16 +35,13 @@
       </tbody>
     </table>
     <div class="no-results-container" v-else>
-      <p>No 2024 Results</p>
+      <p class="no_results_text">No 2024 Results</p>
     </div>
   </div>
-  <div v-if="posts.length < 3">
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-</div>
+  <!-- <div v-if="posts.length < 3"> -->
+  <div class="homePageImage" alt="home page image">
+  </div>
 </template>
   
 <script>
@@ -138,8 +135,13 @@ export default {
 
 .no-results {
   color: #2c3e50;
-  font-size: 20px;
   text-align: center;
+}
+
+.no_results_text {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px white;
 }
 
 .Winners {
@@ -190,7 +192,7 @@ table {
 }
 
 .head {
-  border-bottom: 3px solid rgb(104, 104, 104); 
+  border-bottom: 3px solid rgb(104, 104, 104);
   box-shadow: 5px 5px 30px rgb(53, 53, 53);
 }
 
@@ -200,4 +202,15 @@ td {
   border: 1px solid rgb(97, 97, 97);
   box-shadow: 1px 2px 5px rgb(53, 53, 53);
   padding: 8px;
-}</style>
+}
+
+.homePageImage {
+  background-image: url('../assets/golf_image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 5px 5px 30px black;
+  min-height: 250px;
+}
+</style>
