@@ -2,7 +2,7 @@
   <div class="background">
     <div>
       <div class="error" v-if="error">{{ error }}</div>
-      <h3 class="Winners">2023 WINNERS!</h3>
+      <h3 class="Winners">2024 WINNERS!</h3>
     </div>
     <div class="create-post">
       <label for="create-post">Today's Winner!</label>
@@ -19,7 +19,7 @@
   </div>
   <br />
   <div class="container flex">
-    <table>
+    <table v-if="posts.length">
       <thead class="head">
         <tr>
           <th>Date</th>
@@ -34,7 +34,18 @@
         </tr>
       </tbody>
     </table>
+    <div class="no-results-container" v-else>
+      <p>No 2024 Results</p>
+    </div>
   </div>
+  <div v-if="posts.length < 3">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
 </template>
   
 <script>
@@ -55,7 +66,8 @@ export default {
   },
   async created() {
     try {
-      this.posts = await PostService.getPosts();
+      const allPosts = await PostService.getPosts();
+      this.posts = this.filterPostsByYear(allPosts, 2024);
     } catch (err) {
       this.error = err.message;
     }
@@ -63,6 +75,12 @@ export default {
   methods: {
     showDiv() {
       this.showDivs = true;
+    },
+    filterPostsByYear(posts, year) {
+      return posts.filter(post => {
+        const postYear = new Date(post.createdAt).getFullYear();
+        return postYear === year;
+      });
     },
     formatDate(dateStr) {
       let localDate = new Date(dateStr);
@@ -87,13 +105,11 @@ export default {
       }
       await PostService.insertPost(this.text);
       window.location.reload();
-      // this.posts = await PostService.getPosts();
     },
   },
 };
 </script>
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
   margin: 0 auto;
@@ -103,13 +119,28 @@ export default {
 
 .error {
   opacity: 1;
-  /* transition: opacity 5s ease-in-out; */
   color: red;
   position: absolute;
   z-index: 5;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.no-results-container {
+  width: 100%;
+}
+
+.no-results {
+  color: #2c3e50;
+  font-size: 20px;
+  text-align: center;
 }
 
 .Winners {

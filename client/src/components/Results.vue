@@ -39,7 +39,8 @@ export default {
   },
   async created() {
     try {
-      this.posts = await PostService.getPosts();
+      const allPosts = await PostService.getPosts();
+      this.posts = this.filterPostsByYear(allPosts, 2023);
     } catch (err) {
       this.error = err.message;
     }
@@ -47,6 +48,12 @@ export default {
   methods: {
     showDiv() {
       this.showDivs = true;
+    },
+    filterPostsByYear(posts, year) {
+      return posts.filter(post => {
+        const postYear = new Date(post.createdAt).getFullYear();
+        return postYear === year;
+      });
     },
     formatDate(dateStr) {
       let localDate = new Date(dateStr);

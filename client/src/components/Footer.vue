@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page-container">
         <div class="header bg-gray-100">
             <nav class="container col-12">
                 <div class="row flex items-center">
