@@ -201,9 +201,9 @@ export default {
   margin-right: 10px;
   margin-left: 35px;
   border-radius: 5px;
-  color: rgb(39, 39, 39);
+  color: rgb(221, 221, 221);
   padding: 0 10px;
-  background-color: #8d9e797a;
+  background-color: #141414a2;
 }
 
 .file-input-container {
