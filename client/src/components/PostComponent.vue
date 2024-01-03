@@ -203,7 +203,7 @@ export default {
   border-radius: 5px;
   color: rgb(221, 221, 221);
   padding: 0 10px;
-  background-color: #141414a2;
+  background-color: #1414146c;
 }
 
 .file-input-container {
