@@ -224,6 +224,7 @@ export default {
 .passText {
   color: rgb(48, 48, 48);
   padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 .background {
