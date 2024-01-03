@@ -11,7 +11,7 @@
       <button class="updateStyling" @click="showDiv">Update</button>
       <div v-show="showDivs">
         <br />
-        <input type="password" id="password" v-model="password" placeholder="Enter Password" />
+        <input class="passText" type="password" id="password" v-model="password" placeholder="Enter Password" />
         <button class="postStyling" v-on:click="createPost">Post</button>
       </div>
     </div>
@@ -39,7 +39,6 @@
     </div>
   </div>
   <br>
-  <!-- <div v-if="posts.length < 3"> -->
   <div class="homePageImage" alt="home page image">
   </div>
 </template>
@@ -133,12 +132,8 @@ export default {
   width: 100%;
 }
 
-.no-results {
-  color: #2c3e50;
-  text-align: center;
-}
-
 .no_results_text {
+  color: #7c2020;
   font-size: 30px;
   letter-spacing: 1px;
   text-shadow: 2px 2px 2px white;
@@ -159,6 +154,11 @@ export default {
   border-radius: 5px;
   color: rgb(39, 39, 39);
   padding: 0 10px;
+}
+
+.passText {
+  color: rgb(48, 48, 48);
+  padding-left: 10px;
 }
 
 .background {
