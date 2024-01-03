@@ -5,8 +5,6 @@
       <h3 class="Winners">2024 WINNERS!</h3>
     </div>
     <div class="create-post">
-      <label for="create-post">Today's Winner!</label>
-      <br>
       <input class="input" type="text" id="create-post" v-model="text" placeholder="" />
       <button class="updateStyling" @click="showDiv">Update</button>
       <div v-show="showDivs">
