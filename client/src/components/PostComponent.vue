@@ -199,6 +199,7 @@ export default {
   max-width: 150px;
   margin-top: 10px;
   margin-right: 10px;
+  margin-left: 15px;
   border-radius: 5px;
   color: rgb(39, 39, 39);
   padding: 0 10px;
