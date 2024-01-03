@@ -11,11 +11,14 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     const posts = await loadPostsCollection();
     await posts.insertOne({
-        text: req.body.text,
+        text: req.body.text, // text only
+        image: req.body.image, // image URL or base64 data
         createdAt: new Date()
     });
     res.status(201).send();
 });
+
+
 
 router.delete('/:id', async (req, res) => {
     const posts = await loadPostsCollection();

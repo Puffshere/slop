@@ -10,7 +10,13 @@
       <input class="input" type="text" id="create-post" v-model="text" placeholder="" />
       <button class="updateStyling" @click="showDiv">Update</button>
       <div v-show="showDivs">
-        <br />
+        <div class="file-input-container">
+          <label for="image">Upload Image</label>
+          <div class="input-wrapper">
+            <button type="button" class="hidden">Choose File</button>
+            <input type="file" id="image" @change="onImageChange" class="hidden" />
+          </div>
+        </div>
         <input class="passText" type="password" id="password" v-model="password" placeholder="Enter Password" />
         <button class="postStyling" v-on:click="createPost">Post</button>
       </div>
@@ -28,9 +34,9 @@
       </thead>
       <br>
       <tbody>
-        <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
+        <tr v-for="post in posts" :key="post._id" @click="openImage(post.text.image)">
           <td>{{ formatDate(post.createdAt) }}</td>
-          <td>{{ post.text }}</td>
+          <td>{{ post.text.text }}</td>
         </tr>
       </tbody>
     </table>
@@ -42,7 +48,7 @@
   <div class="homePageImage" alt="home page image">
   </div>
 </template>
-  
+
 <script>
 import PostService from "../PostService";
 
@@ -52,24 +58,64 @@ export default {
     return {
       error: "",
       text: "",
+      image: null,
       posts: [],
       password: "",
       showDivs: false,
-      userInput: '',
-      response: ''
     };
   },
   async created() {
-    try {
-      const allPosts = await PostService.getPosts();
-      this.posts = this.filterPostsByYear(allPosts, 2024);
-    } catch (err) {
-      this.error = err.message;
-    }
+    this.fetchPosts();
   },
   methods: {
     showDiv() {
       this.showDivs = true;
+    },
+    async fetchPosts() {
+      try {
+        const allPosts = await PostService.getPosts();
+        this.posts = this.filterPostsByYear(allPosts, 2024);
+        console.log("Posts: ", this.posts); // Debugging
+      } catch (err) {
+        this.error = err.message;
+      }
+    },
+    triggerFileInput() {
+      this.$refs.fileInput.click();
+    },
+    openImage(imageUrl) {
+      if (imageUrl) {
+        const image = new Image();
+        image.src = imageUrl;
+        image.style.maxWidth = '100%';
+        image.style.maxHeight = '100%';
+        image.style.display = 'block';
+        image.style.margin = 'auto';
+        image.style.position = 'absolute';
+        image.style.top = '0';
+        image.style.left = '0';
+        image.style.bottom = '0';
+        image.style.right = '0';
+
+        const w = window.open("");
+        w.document.body.style.margin = '0';
+        w.document.body.style.height = '100vh';
+        w.document.body.style.display = 'flex';
+        w.document.body.style.alignItems = 'center';
+        w.document.body.style.justifyContent = 'center';
+        w.document.body.style.backgroundColor = 'black';
+        w.document.body.appendChild(image);
+      } else {
+        alert('No image available for this post.');
+      }
+    },
+    onImageChange(e) {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = (e) => {
+        this.image = e.target.result;
+      };
     },
     filterPostsByYear(posts, year) {
       return posts.filter(post => {
@@ -98,13 +144,17 @@ export default {
         }, 400);
         return;
       }
-      await PostService.insertPost(this.text);
+      const postData = {
+        text: this.text,
+        image: this.image
+      };
+      await PostService.insertPost(postData);
       window.location.reload();
     },
   },
 };
 </script>
-  
+
 <style scoped>
 .container {
   margin: 0 auto;
@@ -156,6 +206,21 @@ export default {
   padding: 0 10px;
 }
 
+.file-input-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
 .passText {
   color: rgb(48, 48, 48);
   padding-left: 10px;
@@ -203,6 +268,20 @@ td {
   box-shadow: 1px 2px 5px rgb(53, 53, 53);
   padding: 8px;
 }
+
+/* table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+} */
+
+/* th,
+td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 200px;
+  padding: 8px;
+} */
 
 .homePageImage {
   background-image: url('../assets/golf_image.webp');
