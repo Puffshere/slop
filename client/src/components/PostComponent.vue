@@ -5,6 +5,7 @@
       <h3 class="Winners">2024 WINNERS!</h3>
     </div>
     <div class="create-post">
+      <label class="hidden" for="create-post">Post Title</label>
       <input class="input" type="text" id="create-post" v-model="text" placeholder="" />
       <button class="updateStyling" @click="showDiv">Update</button>
       <div v-show="showDivs">
@@ -12,9 +13,11 @@
           <label for="image">Scorecard</label>
           <div class="input-wrapper">
             <button type="button" class="hidden">Choose File</button>
+            <label class="hidden" for="image">Image</label>
             <input type="file" id="image" @change="onImageChange" class="hidden" />
           </div>
         </div>
+        <label class="hidden" for="password">Password</label>
         <input class="input" type="password" id="password" v-model="password" placeholder="Password" />
         <button class="postStyling" v-on:click="createPost">Post</button>
       </div>
