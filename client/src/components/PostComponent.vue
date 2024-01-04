@@ -15,7 +15,7 @@
             <input type="file" id="image" @change="onImageChange" class="hidden" />
           </div>
         </div>
-        <input class="passText" type="password" id="password" v-model="password" placeholder="Enter Password" />
+        <input class="input" type="password" id="password" v-model="password" placeholder="Password" />
         <button class="postStyling" v-on:click="createPost">Post</button>
       </div>
     </div>
@@ -204,11 +204,11 @@ export default {
   color: rgb(221, 221, 221);
   padding: 0 10px;
   background-color: #1414146c;
+  margin-bottom: 15px;
 }
 
 .file-input-container {
   text-align: center;
-  margin-top: 10px;
 }
 
 .input-wrapper {
@@ -248,7 +248,7 @@ export default {
 }
 
 .postStyling {
-  padding-left: 5px;
+  padding-left: 10px;
   text-shadow: 1px 2px 2px black;
 }
 
