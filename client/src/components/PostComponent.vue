@@ -73,7 +73,6 @@ export default {
       try {
         const allPosts = await PostService.getPosts();
         this.posts = this.filterPostsByYear(allPosts, 2024);
-        console.log("Posts: ", this.posts); // Debugging
       } catch (err) {
         this.error = err.message;
       }
