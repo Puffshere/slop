@@ -9,7 +9,7 @@
       <button class="updateStyling" @click="showDiv">Update</button>
       <div v-show="showDivs">
         <div class="file-input-container">
-          <label for="image">Upload Image</label>
+          <label for="image">Scorecard</label>
           <div class="input-wrapper">
             <button type="button" class="hidden">Choose File</button>
             <input type="file" id="image" @change="onImageChange" class="hidden" />
