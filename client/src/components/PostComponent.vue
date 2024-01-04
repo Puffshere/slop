@@ -221,12 +221,6 @@ export default {
   display: none;
 }
 
-.passText {
-  color: rgb(48, 48, 48);
-  padding-left: 10px;
-  margin-bottom: 15px;
-}
-
 .background {
   background-image: url('../assets/golf_background.webp');
   background-size: cover;
