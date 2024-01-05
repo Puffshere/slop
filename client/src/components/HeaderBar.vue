@@ -52,20 +52,17 @@ export default {
 };
 </script>
 <style scoped>
-
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
 
 .header {
     background-color: lightblue;
     background: linear-gradient(268deg, rgb(193, 220, 230), lightblue);
-
 }
 
 .logo {
@@ -90,4 +87,3 @@ export default {
     }
 }
 </style>
-  

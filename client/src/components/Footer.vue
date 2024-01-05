@@ -42,14 +42,14 @@ export default {
 }
 
 @media screen and (max-width: 575px) {
-            .header {
-                padding: 20px;
-                
-            }
-            .title {
-                float: left;
-                margin-left: 0px !important;
-            }
+    .header {
+        padding: 20px;
+
     }
+
+    .title {
+        float: left;
+        margin-left: 0px !important;
+    }
+}
 </style>
-  

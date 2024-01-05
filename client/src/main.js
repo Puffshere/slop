@@ -11,10 +11,10 @@ import CourseRecords from '../src/pages/CourseRecords.vue'
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { 
-            path: '/', 
-            component: Home, 
-            meta: { 
+        {
+            path: '/',
+            component: Home,
+            meta: {
                 title: 'SloppyGolf.com',
                 metaTags: [
                     {
@@ -24,10 +24,10 @@ const router = createRouter({
                 ]
             }
         },
-        { 
-            path: '/records', 
-            component: CourseRecords, 
-            meta: { 
+        {
+            path: '/records',
+            component: CourseRecords,
+            meta: {
                 title: 'SloppyGolf.com - Course Records',
                 metaTags: [
                     {
@@ -37,10 +37,10 @@ const router = createRouter({
                 ]
             }
         },
-        { 
-            path: '/rules', 
-            component: Rules, 
-            meta: { 
+        {
+            path: '/rules',
+            component: Rules,
+            meta: {
                 title: 'SloppyGolf.com - Rules 2024',
                 metaTags: [
                     {
@@ -50,10 +50,10 @@ const router = createRouter({
                 ]
             }
         },
-        { 
-            path: '/results', 
-            component: Results, 
-            meta: { 
+        {
+            path: '/results',
+            component: Results,
+            meta: {
                 title: 'SloppyGolf.com - Results 2023',
                 metaTags: [
                     {
@@ -89,8 +89,6 @@ router.afterEach((to) => {
 
 const app = createApp(App)
 
-// Add the router to the app
 app.use(router)
 
-// Mount the app
 app.mount('#app')

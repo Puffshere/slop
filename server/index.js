@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 
 app.use(cors());
 
-
 const posts = require('./routes/api/posts');
 app.use('/api/posts', posts);
 

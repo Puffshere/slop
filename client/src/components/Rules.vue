@@ -103,7 +103,6 @@
   border-bottom: none;
 }
 
-
 .rulesList li::before {
   content: counter(rule-number) ".";
   position: absolute;
@@ -126,4 +125,5 @@
   .rulesList li {
     font-size: 14px;
   }
-}</style>
+}
+</style>

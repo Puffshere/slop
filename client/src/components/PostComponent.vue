@@ -224,12 +224,12 @@ export default {
 }
 
 .visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .background {
@@ -274,20 +274,6 @@ td {
   box-shadow: 1px 2px 5px rgb(53, 53, 53);
   padding: 8px;
 }
-
-/* table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-} */
-
-/* th,
-td {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  max-width: 200px;
-  padding: 8px;
-} */
 
 .homePageImage {
   background-image: url('../assets/golf_image.webp');

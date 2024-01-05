@@ -341,7 +341,6 @@ export default {
   max-width: 100%;
 }
 
-
 .container {
   margin: 0 auto;
   box-shadow: 5px 5px 30px black;
@@ -372,5 +371,4 @@ td {
 .booking {
   color: rgb(131, 112, 4);
 }
-
 </style>

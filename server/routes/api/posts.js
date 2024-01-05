@@ -11,27 +11,22 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     const posts = await loadPostsCollection();
     await posts.insertOne({
-        text: req.body.text, // text only
-        image: req.body.image, // image URL or base64 data
+        text: req.body.text,
+        image: req.body.image,
         createdAt: new Date()
     });
     res.status(201).send();
 });
 
-
-
 router.delete('/:id', async (req, res) => {
     const posts = await loadPostsCollection();
-    await posts.deleteOne({_id: new mongodb.ObjectId(req.params.id)});
+    await posts.deleteOne({ _id: new mongodb.ObjectId(req.params.id) });
     res.status(200).send();
 })
 
-
 async function loadPostsCollection() {
     const client = await mongodb.MongoClient.connect('mongodb+srv://shawn:bladex1980@cluster0.ylrym.mongodb.net/cluster0?', {
-        // useNewParser: true
     });
-
 
     return client.db('cluster0').collection('posts');
 

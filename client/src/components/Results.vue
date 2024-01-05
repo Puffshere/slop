@@ -81,23 +81,6 @@ export default {
   transform: translateX(-50%);
 }
 
-.Winners {
-  color: rgb(253, 253, 253);
-  text-shadow: 1px 4px 3px black;
-  font-size: 25px;
-  padding-bottom: 10px;
-  letter-spacing: 2px;
-}
-
-.input {
-  max-width: 150px;
-  margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  color: rgb(39, 39, 39);
-  padding: 0 10px;
-}
-
 .results {
   background-image: url('../assets/main_results_background.webp');
   background-size: cover;
@@ -116,22 +99,6 @@ h1 {
   text-shadow: 13px 13px 3px rgba(59, 59, 61, 0.651);
 }
 
-.create-post {
-  color: white;
-  font-size: 20px;
-  text-shadow: 1px 2px 2px black;
-}
-
-.updateStyling {
-  padding-left: 5px;
-  text-shadow: 1px 2px 2px black;
-}
-
-.postStyling {
-  padding-left: 5px;
-  text-shadow: 1px 2px 2px black;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -148,4 +115,5 @@ td {
   border: 1px solid rgb(97, 97, 97);
   box-shadow: 1px 2px 5px rgb(53, 53, 53);
   padding: 8px;
-}</style>
+}
+</style>
