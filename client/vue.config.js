@@ -1,7 +1,6 @@
 const path = require('path');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
-// You can write the paths as an array of strings or an array of objects
 const paths = [
   {
     path: '/',
