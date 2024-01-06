@@ -16,6 +16,9 @@ class PostService {
             text
         });
     }
+    static async updatePost(id, updateData) {
+        return await axios.put(`${url}${id}`, updateData);
+    }
     static async deletePost(id) {
         return await axios.delete(`${url}${id}`);
     }

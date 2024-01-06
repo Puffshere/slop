@@ -15,6 +15,8 @@
                     <tr>
                         <th>Date</th>
                         <th>Winner</th>
+                        <th>Record</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <br>
@@ -22,6 +24,11 @@
                     <tr v-for="post in posts" :key="post._id">
                         <td>{{ formatDate(post.createdAt) }}</td>
                         <td>{{ post.text.text }}</td>
+                        <td>
+                            <button @click="toggleRecord(post, index)">
+                                {{ post.text.record ? 'Record' : 'Normal' }}
+                            </button>
+                        </td>
                         <td><button @click="deletePost(post._id, index)">Delete</button></td>
                     </tr>
                 </tbody>
@@ -74,8 +81,14 @@ export default {
                 this.error = err.message;
             }
         },
-        triggerFileInput() {
-            this.$refs.fileInput.click();
+        async toggleRecord(post, index) {
+            try {
+                const updatedRecord = !post.text.record;
+                console.log('Data to be sent for update:', { 'text.record': updatedRecord });
+                await PostService.updatePost(post._id, { 'text.record': updatedRecord });
+            } catch (error) {
+                console.error("Error toggling record:", error);
+            }
         },
         async deletePost(postId, index) {
             try {
@@ -84,40 +97,6 @@ export default {
             } catch (error) {
                 console.error("Error deleting post:", error);
             }
-        },
-        openImage(imageUrl) {
-            if (imageUrl) {
-                const image = new Image();
-                image.src = imageUrl;
-                image.style.maxWidth = '100%';
-                image.style.maxHeight = '100%';
-                image.style.display = 'block';
-                image.style.margin = 'auto';
-                image.style.position = 'absolute';
-                image.style.top = '0';
-                image.style.left = '0';
-                image.style.bottom = '0';
-                image.style.right = '0';
-
-                const w = window.open("");
-                w.document.body.style.margin = '0';
-                w.document.body.style.height = '100vh';
-                w.document.body.style.display = 'flex';
-                w.document.body.style.alignItems = 'center';
-                w.document.body.style.justifyContent = 'center';
-                w.document.body.style.backgroundColor = 'black';
-                w.document.body.appendChild(image);
-            } else {
-                alert('No image available for this post.');
-            }
-        },
-        onImageChange(e) {
-            const file = e.target.files[0];
-            const reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = (e) => {
-                this.image = e.target.result;
-            };
         },
         filterPostsByYear(posts, year) {
             return posts.filter(post => {

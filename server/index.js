@@ -9,6 +9,11 @@ app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 
 app.use(cors());
 
+app.use((req, res, next) => {
+    console.log('Incoming request:', req.method, req.path);
+    next();
+});
+
 const posts = require('./routes/api/posts');
 app.use('/api/posts', posts);
 

@@ -19,11 +19,24 @@ router.post('/', async (req, res) => {
     res.status(201).send();
 });
 
+router.put('/test', async (req, res) => {
+    res.send('PUT request to the test route is working');
+});
+
+router.put('/:id', async (req, res) => {
+    const posts = await loadPostsCollection();
+    await posts.updateOne(
+        { _id: new mongodb.ObjectId(req.params.id) },
+        { $set: req.body }
+    );
+    res.status(200).send();
+});
+
 router.delete('/:id', async (req, res) => {
     const posts = await loadPostsCollection();
     await posts.deleteOne({ _id: new mongodb.ObjectId(req.params.id) });
     res.status(200).send();
-})
+});
 
 async function loadPostsCollection() {
     const client = await mongodb.MongoClient.connect('mongodb+srv://shawn:bladex1980@cluster0.ylrym.mongodb.net/cluster0?', {

@@ -36,8 +36,8 @@
       <br>
       <tbody>
         <tr v-for="post in posts" :key="post._id" @click="openImage(post.text.image)">
-          <td>{{ formatDate(post.createdAt) }}</td>
-          <td>{{ post.text.text }}</td>
+          <td :style="getPostStyle(post)">{{ formatDate(post.createdAt) }}</td>
+          <td :style="getPostStyle(post)">{{ post.text.text }}</td>
         </tr>
       </tbody>
     </table>
@@ -128,6 +128,12 @@ export default {
       let localDate = new Date(dateStr);
       localDate.setMinutes(localDate.getMinutes() + localDate.getTimezoneOffset());
       return `${localDate.getMonth() + 1}/${localDate.getDate()}/${localDate.getFullYear()}`;
+    },
+    getPostStyle(post) {
+      return {
+        color: post.text.record ? 'rgb(131, 112, 4)' : 'inherit',
+        backgroundColor: post.text.record ? '#1c1c1c' : 'inherit',
+      };
     },
     async createPost() {
       if (this.password !== "6980") {
