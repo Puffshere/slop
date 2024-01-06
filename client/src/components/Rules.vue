@@ -30,15 +30,15 @@
           the ball last crossed the margin of the hazard, with a one-stroke penalty.</li>
         <li>The team may declare a ball unplayable at any spot on the course, except in a water hazard. The team incurs a
           one-stroke penalty and must play from within one club length of the unplayable spot.</li>
-        <li>No max score on a hole what you get is what you get.</li>
+        <li>No max score on a hole, what you get is what you get.</li>
         <li>In case of a tie, a count-back system will be used, starting from the 18th hole backward.</li>
         <li>Handicap allowances are applied as per the course handicap rules.</li>
         <li>Golf carts are allowed but must adhere to the course's cart rules.</li>
-        <li>Men will tee off from the men's tee box, and Jackson from the women's tee box.</li>
-        <li>There are no gimme putts.  All holes my be finished out till the ball drops.
+        <li>Men will tee off from the men's tee box, and Jackson from the women's tee box on account he has a vagina.</li>
+        <li>There are no gimme putts.  All holes must be finished out till the ball drops.
         </li>
         <li>The pair with the best score on the previous hole has the honor at the next tee.</li>
-        <li>Players arriving late can join mid-round but will incur a penalty for missed holes.</li>
+        <li>Players arriving late can join mid-round but will incur 1 penalty shot for each missed hole.</li>
         <li>The lowest combined score for the pair on each hole counts towards the team's total score.</li>
         <li>Any disputes regarding rules should be resolved by a designated rules official or through a majority decision
           of
