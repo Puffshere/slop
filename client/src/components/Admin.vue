@@ -86,6 +86,7 @@ export default {
                 const updatedRecord = !post.text.record;
                 console.log('Data to be sent for update:', { 'text.record': updatedRecord });
                 await PostService.updatePost(post._id, { 'text.record': updatedRecord });
+                this.fetchPosts();
             } catch (error) {
                 console.error("Error toggling record:", error);
             }
