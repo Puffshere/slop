@@ -118,9 +118,6 @@ export default {
     margin: 0 auto;
     box-shadow: 5px 5px 30px black;
     padding: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .login-container {
@@ -164,6 +161,12 @@ export default {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .no-results-container {
