@@ -84,7 +84,6 @@ export default {
         async toggleRecord(post, index) {
             try {
                 const updatedRecord = !post.text.record;
-                console.log('Data to be sent for update:', { 'text.record': updatedRecord });
                 await PostService.updatePost(post._id, { 'text.record': updatedRecord });
                 this.fetchPosts();
             } catch (error) {
