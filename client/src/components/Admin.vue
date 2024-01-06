@@ -60,7 +60,7 @@ export default {
             this.showDivs = true;
         },
         login() {
-            if (this.username && this.password === 'shawn69') {
+            if (this.username && this.password === 'shawn6980') {
                 this.isLoggedIn = true;
             } else {
                 alert('Invalid credentials!');
