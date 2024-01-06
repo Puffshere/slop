@@ -13,6 +13,7 @@ router.post('/', async (req, res) => {
     await posts.insertOne({
         text: req.body.text,
         image: req.body.image,
+        record: req.body.record,
         createdAt: new Date()
     });
     res.status(201).send();

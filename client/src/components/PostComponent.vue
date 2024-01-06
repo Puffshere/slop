@@ -60,6 +60,7 @@ export default {
       error: "",
       text: "",
       image: null,
+      record: false,
       posts: [],
       password: "",
       showDivs: false,
@@ -146,7 +147,8 @@ export default {
       }
       const postData = {
         text: this.text,
-        image: this.image
+        image: this.image,
+        record: this.record
       };
       await PostService.insertPost(postData);
       window.location.reload();

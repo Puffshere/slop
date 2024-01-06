@@ -37,6 +37,9 @@
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
                         <a href="/rules">Rules</a>
                     </li>
+                    <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
+                        <a href="/admin">Admin Page</a>
+                    </li>
                 </ul>
             </nav>
         </div>

@@ -6,6 +6,7 @@ import Home from './pages/Home.vue'
 import Results from './pages/Results.vue'
 import Rules from '../src/pages/Rules.vue'
 import CourseRecords from '../src/pages/CourseRecords.vue'
+import Admin from '../src/pages/Admin.vue'
 
 
 const router = createRouter({
@@ -59,6 +60,19 @@ const router = createRouter({
                     {
                         name: 'description',
                         content: 'These are the current results for 2023.'
+                    }
+                ]
+            }
+        },
+        {
+            path: '/admin',
+            component: Admin,
+            meta: {
+                title: 'SloppyGolf.com - Admin page',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: 'This is the Administration page for SloppyGolf.com.'
                     }
                 ]
             }
