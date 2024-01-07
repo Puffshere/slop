@@ -12,6 +12,9 @@
         <li>Each team consists of four players, divided into pairs. Each pair will play a scramble format within the team.
         </li>
         <li>Both players in a pair tee off on each hole. The best of the two tee shots is selected for the next shot.</li>
+        <li>If a course has special rules that pertain to that course they must be played how the course designates. This includes
+          power line rules, drop zone rules, ground under repair rules, etc..
+        </li>
         <li>After the best tee shot is selected, both players take their second shot from that spot. This process
           continues
           until the ball is holed.</li>
