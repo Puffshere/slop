@@ -92,6 +92,17 @@
             <td>Shawn</td>
           </tr>
 
+          <tr>
+            <td class="pointer booking"><a
+                href="https://w.cps.golf/TemeculaCreekInnV3/(S(fr3y3u3xeewg2vbdj04tjg00))/Home/nIndex?CourseId=8,9,12&Date=2024-1-17&Time=AnyTime&Player=99&Hole=Any">Temecula
+                Creek (CS)</a></td>
+            <td class="pointer scorecard">
+              <a @click="temecula_creek_singles" target="_blank">97</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="temecula creek singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
@@ -190,7 +201,7 @@
             <td class="pointer booking"><a href="https://thelegendsgc.com/online-tee-times/">Legends Temeku</a>
             </td>
             <td class="pointer scorecard"><a @click="temeku2" target="_blank">80</a>
-              <img :src="imageSrc" v-if="imageSrc !== ''" alt="temekum scorecard">
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="temeku scorecard">
             </td>
             <td>Shawn/Ron-Jack/Bock</td>
           </tr>
@@ -313,6 +324,10 @@ export default {
     },
     seven_hills_singles() {
       const imageSrc = require('../assets/scorecards/Seven_Hills_doubles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    temecula_creek_singles() {
+      const imageSrc = require('../assets/scorecards/Temecula_Creek_Singles.jpg');
       window.open(imageSrc, '_blank');
     },
     temeku2() {
