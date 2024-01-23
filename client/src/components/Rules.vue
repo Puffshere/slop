@@ -12,7 +12,8 @@
         <li>Each team consists of four players, divided into pairs. Each pair will play a scramble format within the team.
         </li>
         <li>Both players in a pair tee off on each hole. The best of the two tee shots is selected for the next shot.</li>
-        <li>If a course has special rules that pertain to that course they must be played how the course designates. This includes
+        <li>If a course has special rules that pertain to that course they must be played how the course designates. This
+          includes
           power line rules, drop zone rules, ground under repair rules, etc..
         </li>
         <li>After the best tee shot is selected, both players take their second shot from that spot. This process
@@ -34,11 +35,11 @@
         <li>The team may declare a ball unplayable at any spot on the course, except in a water hazard. The team incurs a
           one-stroke penalty and must play from within one club length of the unplayable spot.</li>
         <li>No max score on a hole, what you get is what you get.</li>
-        <li>In case of a tie, a count-back system will be used, starting from the 18th hole backward.</li>
-        <li>Handicap allowances are applied as per the course handicap rules.</li>
-        <li>Golf carts are allowed but must adhere to the course's cart rules.</li>
-        <li>Men will tee off from the men's tee box, and Jackson from the women's tee box on account he has a vagina.</li>
-        <li>There are no gimme putts.  All holes must be finished out till the ball drops.
+        <li>Players will use the white tee box or its equivalent to tee off.</li>
+        <li>There are no gimme putts. All holes must be finished out till the ball drops.</li>
+        <li>Players are not to touch the opposing teams ball at anytime unless directed to do so. First time will be a
+          warning
+          with the second time incurring a penalty stroke.
         </li>
         <li>The pair with the best score on the previous hole has the honor at the next tee.</li>
         <li>Players arriving late can join mid-round but will incur 1 penalty shot for each missed hole.</li>
@@ -48,6 +49,13 @@
           the team captains present.</li>
         <li>Players are expected to conduct themselves in the spirit of the game, displaying sportsmanship, respect, and
           consideration for other players and the course.</li>
+        <li>IN CASE OF A TIE, score will revert to match play with the team winning the most holes the victor. In case of
+          a match play tie, a score system will be used to generate a winner with a par equaling 1 point, a birdie
+          counting as 2 points, an eagle counting as 3 points, and a hole in one counting as an automatic points win. In
+          case of a points tie the winner will be chosen by working backwards on the card to the last hole won by a team.
+          In the case of a complete even game through 18 holes, winner will be chosen by a closes to pin on the neareast par
+          3.
+        </li>
       </ol>
     </div>
   </div>
@@ -128,5 +136,4 @@
   .rulesList li {
     font-size: 14px;
   }
-}
-</style>
+}</style>
