@@ -51,7 +51,7 @@
           consideration for other players and the course.</li>
         <li>IN CASE OF A TIE, score will revert to match play with the team winning the most holes the victor. In case of
           a match play tie, a score system will be used to generate a winner with a par equaling 1 point, a birdie
-          counting as 2 points, an eagle counting as 3 points, and a hole in one counting as an automatic points win. In
+          counting as 2 points, an eagle counting as 3 points, an albatross counting as 4 points, and a hole in one counting as an automatic points win. In
           case of a points tie the winner will be chosen by working backwards on the card to the last hole won by a team.
           In the case of a complete even game through 18 holes, winner will be chosen by a closes to pin on the neareast par
           3.
