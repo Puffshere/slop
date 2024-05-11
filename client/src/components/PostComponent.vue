@@ -76,7 +76,8 @@ export default {
     async fetchPosts() {
       try {
         const allPosts = await PostService.getPosts();
-        this.posts = this.filterPostsByYear(allPosts, 2024);
+        const sortedPosts = allPosts.sort((a, b) => a.createdAt - b.createdAt);
+        this.posts = this.filterPostsByYear(sortedPosts, 2024);
       } catch (err) {
         this.error = err.message;
       }
