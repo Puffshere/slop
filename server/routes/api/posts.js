@@ -5,9 +5,8 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
     // const posts = await loadPostsCollection();
-    const collection = await loadPostsCollection();
-    const posts = await collection.find().sort({ createdAt: 1 }).toArray();
-    res.send(posts);
+    const posts = await loadPostsCollection();
+    res.send(await posts.find().sort({ createdAt: 1 }).toArray());
 });
 
 router.post('/', async (req, res) => {
