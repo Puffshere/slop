@@ -35,7 +35,7 @@
       </thead>
       <br>
       <tbody>
-        <tr v-for="post in posts" :key="post._id" @click="openImage(post.text.image)">
+        <tr v-for="post in paginatedPosts" :key="post._id" @click="openImage(post.text.image)">
           <td :style="getPostStyle(post)">{{ formatDate(post.createdAt) }}</td>
           <td :style="getPostStyle(post)">{{ post.text.text }}</td>
         </tr>
@@ -46,13 +46,16 @@
     </div>
   </div>
   <br>
-  <div class="homePageImage" alt="home page image">
+  <div class="pagination" v-if="totalPages > 1">
+    <button @click="goToPage(currentPage - 1)" :disabled="currentPage === 1" class="previousBtn">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button @click="goToPage(currentPage + 1)" :disabled="currentPage === totalPages" class="nextBtn">Next</button>
   </div>
+  <div class="homePageImage" alt="home page image"></div>
 </template>
 
 <script>
 import PostService from "../PostService";
-
 
 export default {
   data() {
@@ -64,7 +67,19 @@ export default {
       posts: [],
       password: "",
       showDivs: false,
+      currentPage: 1,
+      pageSize: 10,
     };
+  },
+  computed: {
+    paginatedPosts() {
+      const start = (this.currentPage - 1) * this.pageSize;
+      const end = start + this.pageSize;
+      return this.posts.slice(start, end);
+    },
+    totalPages() {
+      return Math.ceil(this.posts.length / this.pageSize);
+    },
   },
   async created() {
     this.fetchPosts();
@@ -76,10 +91,16 @@ export default {
     async fetchPosts() {
       try {
         const allPosts = await PostService.getPosts();
-        const sortedPosts = allPosts.sort((a, b) => a.createdAt - b.createdAt);
-        this.posts = this.filterPostsByYear(sortedPosts, 2024);
+        const filteredPosts = this.filterPostsByYear(allPosts, 2024);
+        const sortedPosts = filteredPosts.sort((a, b) => b.createdAt - a.createdAt);
+        this.posts = sortedPosts;
       } catch (err) {
         this.error = err.message;
+      }
+    },
+    goToPage(page) {
+      if (page >= 1 && page <= this.totalPages) {
+        this.currentPage = page;
       }
     },
     triggerFileInput() {
@@ -291,5 +312,25 @@ td {
   background-repeat: no-repeat;
   box-shadow: 5px 5px 30px black;
   min-height: 220px;
+}
+
+.pagination {
+  margin-bottom: 20px;
+}
+
+.previousBtn {
+  background-color: #aed8e6;
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.nextBtn {
+  background-color: #aed8e6;
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
 }
 </style>
