@@ -91,7 +91,7 @@ export default {
     async fetchPosts() {
       try {
         const allPosts = await PostService.getPosts();
-        const filteredPosts = this.filterPostsByYear(allPosts, 2023);
+        const filteredPosts = this.filterPostsByYear(allPosts, 2024);
         const sortedPosts = filteredPosts.sort((a, b) => b.createdAt - a.createdAt);
         this.posts = sortedPosts;
       } catch (err) {
