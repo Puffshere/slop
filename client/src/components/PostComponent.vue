@@ -2,9 +2,9 @@
   <div class="background">
     <div>
       <div class="error" v-if="error">{{ error }}</div>
-      <h3 class="Winners">2024 WINNER!</h3>
+      <h3 class="Winners">2024 WINNERS!</h3>
     </div>
-    <div v-if="post && Object.keys(post).length > 0">
+    <div v-if="posts && posts.length > 0">
       <table>
         <thead class="head">
           <tr>
@@ -13,7 +13,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr @click="openImage(post.image)">
+          <tr v-for="post in posts" :key="post._id" @click="openImage(post.image)">
             <td :style="getPostStyle(post)">{{ formatDate(post.createdAt) }}</td>
             <td :style="getPostStyle(post)">{{ post.text }}</td>
           </tr>
@@ -33,20 +33,20 @@ export default {
   data() {
     return {
       error: "",
-      post: null, // Ensure this is initialized properly
+      posts: [], // Ensure this is always an array
     };
   },
   async created() {
-    await this.fetchPost();
+    await this.fetchPosts();
   },
   methods: {
-    async fetchPost() {
+    async fetchPosts() {
       try {
-        const post = await PostService.getPost();
-        console.log("Post fetched from service:", post); // Log to ensure correct format
-        this.post = post;
+        const posts = await PostService.getPosts();
+        console.log("Posts fetched from service:", posts); // Log to verify correct data
+        this.posts = posts;
       } catch (err) {
-        console.error("Error in fetchPost:", err); // Log to identify issues
+        console.error("Error in fetchPosts:", err); // Log to identify any issues
         this.error = err.message;
       }
     },
@@ -77,7 +77,7 @@ export default {
       }
     },
     formatDate(dateStr) {
-      if (!dateStr) return ''; // Additional safety check for empty date strings
+      if (!dateStr) return ''; // Check for null or undefined date
       let localDate = new Date(dateStr);
       localDate.setMinutes(localDate.getMinutes() + localDate.getTimezoneOffset());
       return `${localDate.getMonth() + 1}/${localDate.getDate()}/${localDate.getFullYear()}`;
@@ -91,3 +91,7 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Same CSS as before */
+</style>

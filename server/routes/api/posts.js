@@ -17,18 +17,14 @@ async function loadPostsCollection() {
   return db.collection('posts');
 }
 
-// Get a single post
+// Get all posts
 router.get('/', async (req, res) => {
   try {
     const posts = await loadPostsCollection();
-    const post = await posts.findOne(); // Returns only one post
-    if (post) {
-      res.status(200).send(post);
-    } else {
-      res.status(404).send({ message: "No posts available" });
-    }
+    const allPosts = await posts.find({}).toArray();
+    res.status(200).send(allPosts); // Return an array (even if empty)
   } catch (error) {
-    console.error("Error fetching post:", error);
+    console.error("Error fetching posts:", error);
     res.status(503).send({ message: "Service Unavailable" });
   }
 });
