@@ -4,7 +4,7 @@
       <div class="error" v-if="error">{{ error }}</div>
       <h3 class="Winners">2024 WINNER!</h3>
     </div>
-    <div v-if="post">
+    <div v-if="post && Object.keys(post).length > 0">
       <table>
         <thead class="head">
           <tr>
@@ -33,18 +33,20 @@ export default {
   data() {
     return {
       error: "",
-      post: null,
+      post: null, // Ensure this is initialized properly
     };
   },
   async created() {
-    this.fetchPost();
+    await this.fetchPost();
   },
   methods: {
     async fetchPost() {
       try {
         const post = await PostService.getPost();
+        console.log("Post fetched from service:", post); // Log to ensure correct format
         this.post = post;
       } catch (err) {
+        console.error("Error in fetchPost:", err); // Log to identify issues
         this.error = err.message;
       }
     },
@@ -75,14 +77,15 @@ export default {
       }
     },
     formatDate(dateStr) {
+      if (!dateStr) return ''; // Additional safety check for empty date strings
       let localDate = new Date(dateStr);
       localDate.setMinutes(localDate.getMinutes() + localDate.getTimezoneOffset());
       return `${localDate.getMonth() + 1}/${localDate.getDate()}/${localDate.getFullYear()}`;
     },
     getPostStyle(post) {
       return {
-        color: post.record ? 'rgb(131, 112, 4)' : 'inherit',
-        backgroundColor: post.record ? '#1c1c1c' : 'inherit',
+        color: post?.record ? 'rgb(131, 112, 4)' : 'inherit',
+        backgroundColor: post?.record ? '#1c1c1c' : 'inherit',
       };
     },
   },
