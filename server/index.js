@@ -7,7 +7,14 @@ const app = express();
 app.use(bodyParser.json({ limit: '100mb' }));
 app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: 'https://sloppygolf.com', // Allow only your production domain
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+};
+app.use(cors(corsOptions));
 
 // Console.log for cors server used for debugging
 
@@ -33,3 +40,4 @@ if (process.env.NODE_ENV === 'production') {
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
+
