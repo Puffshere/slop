@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import './index.css'
 import App from './pages/App.vue'
 import Home from './pages/Home.vue'
-import Results from './pages/Results.vue'
+import Results from './pages/2023Results.vue'
 import Rules from '../src/pages/Rules.vue'
 import CourseRecords from '../src/pages/CourseRecords.vue'
 import Admin from '../src/pages/Admin.vue'
@@ -52,7 +52,7 @@ const router = createRouter({
             }
         },
         {
-            path: '/results',
+            path: '/2023results',
             component: Results,
             meta: {
                 title: 'SloppyGolf.com - Results 2023',
@@ -60,6 +60,19 @@ const router = createRouter({
                     {
                         name: 'description',
                         content: 'These are the current results for 2023.'
+                    }
+                ]
+            }
+        },
+        {
+            path: '2024/results',
+            component: Results,
+            meta: {
+                title: 'SloppyGolf.com - Results 2024',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: 'These are the current results for 2024.'
                     }
                 ]
             }

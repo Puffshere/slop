@@ -32,7 +32,10 @@
                         </a>
                     </li>
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
-                        <a href="/results">2023 Results</a>
+                        <a href="/2024results">2024 Results</a>
+                    </li>
+                    <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
+                        <a href="/2023results">2023 Results</a>
                     </li>
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
                         <a href="/rules">Rules</a>

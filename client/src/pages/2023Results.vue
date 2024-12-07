@@ -7,7 +7,7 @@
 
 <script>
 import Awards from '../components/Awards.vue';
-import Results from "@/components/Results.vue";
+import Results from "@/components/2023Results.vue";
 
 
 export default {
