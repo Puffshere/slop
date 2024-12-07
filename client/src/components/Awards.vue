@@ -3,7 +3,7 @@
   <div class="container">
     <img class="flex banner" src="../assets/Congrats_banner.webp" alt="congrats banner image">
     <div class="champs">Shawn/Jackson</div>
-    <div class="champions">2023 CHAMPIONS!</div>
+    <div class="champions">2024 CHAMPIONS!</div>
   </div>
 </template>
   
