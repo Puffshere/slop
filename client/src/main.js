@@ -65,7 +65,7 @@ const router = createRouter({
             }
         },
         {
-            path: '2024/results',
+            path: '/2024results',
             component: Results,
             meta: {
                 title: 'SloppyGolf.com - Results 2024',
