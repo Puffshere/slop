@@ -17,7 +17,7 @@
       <tbody>
         <tr v-for="(post, index) in posts" v-bind:item="post" v-bind:index="index" v-bind:key="post._id">
           <td>{{ formatDate(post.createdAt) }}</td>
-          <td>{{ post.text }}</td>
+          <td>{{ post.text.text }}</td>
         </tr>
       </tbody>
     </table>
