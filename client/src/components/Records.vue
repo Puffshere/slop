@@ -144,6 +144,17 @@
           </tr>
 
           <tr>
+            <td class="pointer booking"><a
+                href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?interfaceparameter=webtrac_southwest&module=GR&secondarycode=29&begintime=07%3A00+am&_csrf_token=eJ72010N1J703Q2V263I2L4J6X5Z6I586N634K6E681H5P5U6V5D036Y4H5F526258526N67705S5W576O1K5M4N556J055U5E5Q50195F4R57510G5Y4L596B1J5R4T4M">AB
+                South</a></td>
+            <td class="pointer scorecard">
+              <a @click="ABSouth2" target="_blank">78</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="admiral baker south 2 man scorecard">
+            </td>
+            <td>Bock/Butryn</td>
+          </tr>
+
+          <tr>
             <td class="pointer booking"><a href="https://i-golfing.teesnap.net/">California Oaks</a></td>
             <td class="pointer scorecard">
               <a @click="california_oaks_doubles" target="_blank">73</a>
@@ -328,6 +339,10 @@ export default {
     },
     ABNorth2() {
       const imageSrc = require('../assets/scorecards/AB_North2.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    ABSouth2() {
+      const imageSrc = require('../assets/scorecards/AB-south-2player.jpg');
       window.open(imageSrc, '_blank');
     },
     rancho() {
