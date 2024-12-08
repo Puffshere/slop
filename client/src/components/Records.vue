@@ -114,6 +114,17 @@
             <td>Shawn</td>
           </tr>
 
+          <tr>
+            <td class="pointer booking"><a
+                href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
+                Palms</a></td>
+            <td class="pointer scorecard">
+              <a @click="palms_singles" target="_blank">102</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="palms scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
@@ -187,7 +198,10 @@
             <td class="pointer booking"><a
                 href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
                 Palms</a></td>
-            <td>79</td>
+            <td class="pointer scorecard">
+              <a @click="palms_doubles" target="_blank">78</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="palms scorecard">
+            </td>
             <td>Shawn/Jackson</td>
           </tr>
 
@@ -315,6 +329,14 @@ export default {
     },
     lakes_doubles() {
       const imageSrc = require('../assets/scorecards/Lakes_doubles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    palms_singles() {
+      const imageSrc = require('../assets/scorecards/palms-singles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    palms_doubles() {
+      const imageSrc = require('../assets/scorecards/palms-doubles.jpg');
       window.open(imageSrc, '_blank');
     },
     california_oaks_doubles() {
