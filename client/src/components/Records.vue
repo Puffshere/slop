@@ -83,7 +83,8 @@
           </tr>
 
           <tr>
-            <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/19461/1676#/teetimes">Seven
+            <td class="pointer booking"><a
+                href="https://foreupsoftware.com/index.php/booking/19461/1676#/teetimes">Seven
                 Hills</a></td>
             <td class="pointer scorecard">
               <a @click="seven_hills_singles" target="_blank">86</a>
@@ -99,6 +100,16 @@
             <td class="pointer scorecard">
               <a @click="temecula_creek_singles" target="_blank">97</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="temecula creek singles scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
+          <tr>
+            <td class="pointer booking"><a href="https://nativeoakspp.ezlinksgolf.com/index.html#/search">Navive
+                Oaks</a></td>
+            <td class="pointer scorecard">
+              <a @click="native_oaks_singles" target="_blank">102</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="native oaks singles scorecard">
             </td>
             <td>Shawn</td>
           </tr>
@@ -151,7 +162,8 @@
           </tr>
 
           <tr>
-            <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/21229/7359#/teetimes">Cross
+            <td class="pointer booking"><a
+                href="https://foreupsoftware.com/index.php/booking/21229/7359#/teetimes">Cross
                 Creek</a></td>
             <td class="pointer scorecard">
               <a @click="cross_creek_doubles" target="_blank">84</a>
@@ -161,14 +173,16 @@
           </tr>
 
           <tr>
-            <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
+            <td class="pointer booking"><a
+                href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
                 Palms</a></td>
             <td>79</td>
             <td>Shawn/Jackson</td>
           </tr>
 
           <tr>
-            <td class="pointer booking"><a href="https://foreupsoftware.com/index.php/booking/19103/954#/teetimes">Menifee
+            <td class="pointer booking"><a
+                href="https://foreupsoftware.com/index.php/booking/19103/954#/teetimes">Menifee
                 Lakes</a></td>
             <td class="pointer scorecard">
               <a @click="lakes_doubles" target="_blank">74</a>
@@ -178,7 +192,8 @@
           </tr>
 
           <tr>
-            <td class="pointer booking"><a href="https://www.chronogolf.com/club/miramar-memorial-golf-course">Miramar</a>
+            <td class="pointer booking"><a
+                href="https://www.chronogolf.com/club/miramar-memorial-golf-course">Miramar</a>
             </td>
             <td class="pointer scorecard">
               <a @click="miramar_doubles" target="_blank">77</a>
@@ -188,7 +203,8 @@
           </tr>
 
           <tr>
-            <td class="pointer booking"><a href="https://www.thegolfclubatranchocalifornia.com/book-a-tee-time/">Golf Club
+            <td class="pointer booking"><a href="https://www.thegolfclubatranchocalifornia.com/book-a-tee-time/">Golf
+                Club
                 Rancho</a></td>
             <td class="pointer scorecard">
               <a @click="rancho" target="_blank">75</a>
@@ -243,7 +259,7 @@
     </div>
   </section>
 </template>
-  
+
 <script>
 export default {
   data() {
@@ -330,6 +346,10 @@ export default {
       const imageSrc = require('../assets/scorecards/Temecula_Creek_Singles.jpg');
       window.open(imageSrc, '_blank');
     },
+    native_oaks_singles() {
+      const imageSrc = require('../assets/scorecards/native-oaks-singles.jpg');
+      window.open(imageSrc, '_blank');
+    },
     temeku2() {
       const imageSrc = require('../assets/scorecards/temeku2.jpg');
       window.open(imageSrc, '_blank');
@@ -337,7 +357,7 @@ export default {
   }
 };
 </script>
-  
+
 <style scoped>
 .courseRecords {
   color: rgb(131, 112, 4);
@@ -349,7 +369,7 @@ export default {
 }
 
 .background {
-  background: url('../assets/course_records_background_new_resolution.png') center/cover no-repeat;
+  background: url('../assets/course_records_background_new.webp') center/cover no-repeat;
   min-height: 150px;
   padding: 20px;
   box-shadow: 5px 5px 30px black;
