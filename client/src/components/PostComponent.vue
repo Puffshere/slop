@@ -2,7 +2,7 @@
   <div class="background">
     <div>
       <div class="error" v-if="error">{{ error }}</div>
-      <h3 class="Winners">2024 WINNERS!</h3>
+      <h3 class="Winners">2025 WINNERS!</h3>
     </div>
     <div class="create-post">
       <label class="visually-hidden" for="create-post">Post Title</label>
@@ -42,7 +42,7 @@
       </tbody>
     </table>
     <div class="no-results-container" v-else>
-      <p class="no_results_text">No 2024 Results</p>
+      <p class="no_results_text">No 2025 Results</p>
     </div>
   </div>
   <br>
@@ -91,7 +91,7 @@ export default {
     async fetchPosts() {
       try {
         const allPosts = await PostService.getPosts();
-        const filteredPosts = this.filterPostsByYear(allPosts, 2024);
+        const filteredPosts = this.filterPostsByYear(allPosts, 2025);
         const sortedPosts = filteredPosts.sort((a, b) => b.createdAt - a.createdAt);
         this.posts = sortedPosts;
       } catch (err) {
