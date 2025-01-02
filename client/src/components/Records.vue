@@ -78,7 +78,7 @@
                 href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?interfaceparameter=webtrac_southwest&module=GR&secondarycode=29&begintime=07%3A00+am&_csrf_token=eJ72010N1J703Q2V263I2L4J6X5Z6I586N634K6E681H5P5U6V5D036Y4H5F526258526N67705S5W576O1K5M4N556J055U5E5Q50195F4R57510G5Y4L596B1J5R4T4M">AB
                 South</a></td>
             <td class="pointer scorecard">
-              <a @click="ABSouth1" target="_blank">101</a>
+              <a @click="ABSouth1" target="_blank">97</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="admiral baker south 1 scorecard">
             </td>
             <td>Shawn</td>
@@ -371,7 +371,7 @@ export default {
       window.open(imageSrc, '_blank');
     },
     ABSouth1() {
-      const imageSrc = require('../assets/scorecards/ABSouth1.jpg');
+      const imageSrc = require('../assets/scorecards/ABSouth1-2.jpg');
       window.open(imageSrc, '_blank');
     },
     ABNorth2() {
