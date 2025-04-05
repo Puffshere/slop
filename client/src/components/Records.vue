@@ -130,7 +130,7 @@
                 href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
                 Palms</a></td>
             <td class="pointer scorecard">
-              <a @click="palms_singles" target="_blank">102</a>
+              <a @click="palms_singles" target="_blank">93</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="palms scorecard">
             </td>
             <td>Shawn</td>
