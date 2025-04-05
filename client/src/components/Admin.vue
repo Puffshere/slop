@@ -34,7 +34,7 @@
                 </tbody>
             </table>
             <div class="no-results-container" v-else>
-                <p class="no_results_text">No 2024 Results</p>
+                <p class="no_results_text">No 2025 Results</p>
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@ export default {
         async fetchPosts() {
             try {
                 const allPosts = await PostService.getPosts();
-                this.posts = this.filterPostsByYear(allPosts, 2024);
+                this.posts = this.filterPostsByYear(allPosts, 2025);
             } catch (err) {
                 this.error = err.message;
             }
