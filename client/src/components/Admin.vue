@@ -76,7 +76,7 @@ export default {
         async fetchPosts() {
             try {
                 const allPosts = await PostService.getPosts();
-                this.posts = this.filterPostsByYear(allPosts, 2025);
+                this.posts = this.filterPostsByYear(allPosts, 2025).reverse();
             } catch (err) {
                 this.error = err.message;
             }
@@ -112,20 +112,24 @@ export default {
     },
 };
 </script>
-  
+
 <style scoped>
-.container {
-    margin: 0 auto;
+.content {
+    margin: 30px 10px 0 10px;
     box-shadow: 5px 5px 30px black;
     padding: 12px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
+.container {
+    padding: 0px;
+    margin: 0 auto;
+}
+
 .login-container {
     max-width: 300px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -193,5 +197,17 @@ td {
     border: 1px solid rgb(97, 97, 97);
     box-shadow: 1px 2px 5px rgb(53, 53, 53);
     padding: 8px;
+}
+
+@media (max-width: 350px) {
+
+    table,
+    th,
+    td {
+        border: 1px solid rgb(97, 97, 97);
+        box-shadow: 1px 2px 5px rgb(53, 53, 53);
+        padding: 7px 10px 3px 10px;
+        font-size: 12px;
+    }
 }
 </style>
