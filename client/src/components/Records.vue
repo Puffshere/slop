@@ -136,6 +136,17 @@
             <td>Shawn</td>
           </tr>
 
+          <tr>
+            <td class="pointer booking"><a
+                href="https://foreupsoftware.com/index.php/booking/19103/968#/teetimes">Menifee
+                Lakes</a></td>
+            <td class="pointer scorecard">
+              <a @click="lakes_singles" target="_blank">102</a>
+              <img :src="imageSrc" v-if="imageSrc !== ''" alt="palms scorecard">
+            </td>
+            <td>Shawn</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
@@ -344,6 +355,10 @@ export default {
     },
     palms_singles() {
       const imageSrc = require('../assets/scorecards/palms-singles.jpg');
+      window.open(imageSrc, '_blank');
+    },
+    lakes_singles() {
+      const imageSrc = require('../assets/scorecards/menifee_lakes_singles.jpg');
       window.open(imageSrc, '_blank');
     },
     palms_doubles() {
