@@ -144,7 +144,7 @@
               <a @click="lakes_singles" target="_blank">102</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="palms scorecard">
             </td>
-            <td>Shawn</td>
+            <td>Bock</td>
           </tr>
 
         </tbody>
