@@ -32,6 +32,9 @@
                         </a>
                     </li>
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
+                        <a href="/2025results">2025 Results</a>
+                    </li>
+                    <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
                         <a href="/2024results">2024 Results</a>
                     </li>
                     <li class="links text-sm font-bold text-gray-800 hover:text-blue-400">
