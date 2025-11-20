@@ -22,7 +22,7 @@
       </tbody>
     </table>
     <div class="no-results-container" v-else>
-      <p class="no_results_text">No 2024 Results</p>
+      <p class="no_results_text">No 2025 Results</p>
     </div>
   </div>
   <br>

@@ -79,6 +79,19 @@ const router = createRouter({
             }
         },
         {
+            path: '/2025results',
+            component: twentyFiveResults,
+            meta: {
+                title: 'SloppyGolf.com - Results 2025',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: 'These are the current results for 2025.'
+                    }
+                ]
+            }
+        },
+        {
             path: '/admin',
             component: Admin,
             meta: {
