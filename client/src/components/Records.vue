@@ -67,10 +67,10 @@
                 href="https://myffr.navyaims.com/navywest/wbwsc/navywest.wsc/search.html?module=GR&secondarycode=28&begintime=07%3A00+am&_csrf_token=fs0Y1I670L6A3M2T133L424D5M4U5M591Y70624R5K695L4G5X571J5F4P425F1J0D4T5B5S0G654G6D480A014I5C5A1N5M6H6M6J0S5Y5251646G5R4U516I0A034T5T">AB
                 North</a></td>
             <td class="pointer scorecard">
-              <a @click="ABNorth1" target="_blank">96</a>
+              <a @click="ABNorth1" target="_blank">94</a>
               <img :src="imageSrc" v-if="imageSrc !== ''" alt="admiral baker north 1 scorecard">
             </td>
-            <td>Shawn</td>
+            <td>Butryn</td>
           </tr>
 
           <tr>
@@ -382,7 +382,7 @@ export default {
       window.open(imageSrc, '_blank');
     },
     ABNorth1() {
-      const imageSrc = require('../assets/scorecards/ABNorth1.jpg');
+      const imageSrc = require('../assets/scorecards/ABNorth1-2.webp');
       window.open(imageSrc, '_blank');
     },
     ABSouth1() {
